@@ -12,6 +12,8 @@ import json
 import time
 import os
 
+import urllib.parse
+
 # ---------------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------------
@@ -121,10 +123,11 @@ def get_all_films(director_qids, limit_per_director=FILMS_PER_DIRECTOR):
     for r in rows:
         d_qid = r["director"]["value"].split("/")[-1]
         by_director.setdefault(d_qid, [])
+        article_title = urllib.parse.unquote(r["article"]["value"].split("/wiki/")[-1]).replace("_", " ")
         by_director[d_qid].append({
             "qid": r["film"]["value"].split("/")[-1],
             "title": r["filmLabel"]["value"],
-            "article_title": r["article"]["value"].split("/wiki/")[-1].replace("_", " "),
+            "article_title": article_title,
             "sitelinks": int(r["sitelinks"]["value"]),
         })
 
@@ -159,7 +162,7 @@ def get_relations_for_property(film_qids_chunk, prop, rel_name):
             "film_qid": r["film"]["value"].split("/")[-1],
             "relationship": rel_name,
             "entity_title": r["entityLabel"]["value"],
-            "article_title": r["article"]["value"].split("/wiki/")[-1].replace("_", " "),
+            "article_title": urllib.parse.unquote(r["article"]["value"].split("/wiki/")[-1]).replace("_", " "),
         }
         for r in rows
     ]
@@ -233,7 +236,7 @@ def build_corpus():
     for d_qid, films in films_by_director.items():
         d_name = qid_to_name[d_qid]
         for film in films:
-            triples.append({"source": d_name, "relationship": "DIRECTED", "target": film["title"]})
+            triples.append({"source": d_name, "relationship": "DIRECTED", "target": film["article_title"]})
             all_films.append(film)
 
     print(f"  Found {len(all_films)} films across {len(films_by_director)} directors.")
@@ -241,15 +244,15 @@ def build_corpus():
     print("Step 3/3: Fetching cast/studio/award relations...")
     relations = get_all_film_relations([f["qid"] for f in all_films])
 
-    film_title_by_qid = {f["qid"]: f["title"] for f in all_films}
+    film_article_by_qid = {f["qid"]: f["article_title"] for f in all_films}
     for rel in relations:
-        film_title = film_title_by_qid.get(rel["film_qid"])
-        if not film_title:
+        film_article = film_article_by_qid.get(rel["film_qid"])
+        if not film_article:
             continue
         triples.append({
-            "source": film_title,
+            "source": film_article,
             "relationship": rel["relationship"],
-            "target": rel["entity_title"],
+            "target": rel["article_title"],
         })
 
     # Collect every article title we need text for
@@ -278,4 +281,4 @@ def build_corpus():
 
 
 if __name__ == "__main__":
-    build_corpus()
+    build_corpus()

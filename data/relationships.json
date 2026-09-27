@@ -2,7 +2,7 @@
   {
     "source": "Ryan Coogler",
     "relationship": "DIRECTED",
-    "target": "Black Panther"
+    "target": "Black Panther (film)"
   },
   {
     "source": "Ryan Coogler",
@@ -12,17 +12,17 @@
   {
     "source": "Ryan Coogler",
     "relationship": "DIRECTED",
-    "target": "Sinners"
+    "target": "Sinners (2025 film)"
   },
   {
     "source": "Ryan Coogler",
     "relationship": "DIRECTED",
-    "target": "Creed"
+    "target": "Creed (film)"
   },
   {
     "source": "Ryan Coogler",
     "relationship": "DIRECTED",
-    "target": "Rocky"
+    "target": "Rocky (franchise)"
   },
   {
     "source": "Taika Waititi",
@@ -72,17 +72,17 @@
   {
     "source": "Jon Watts",
     "relationship": "DIRECTED",
-    "target": "Wolfs"
+    "target": "Wolfs (film)"
   },
   {
     "source": "James Cameron",
     "relationship": "DIRECTED",
-    "target": "Titanic"
+    "target": "Titanic (1997 film)"
   },
   {
     "source": "James Cameron",
     "relationship": "DIRECTED",
-    "target": "Avatar"
+    "target": "Avatar (2009 film)"
   },
   {
     "source": "James Cameron",
@@ -97,7 +97,7 @@
   {
     "source": "James Cameron",
     "relationship": "DIRECTED",
-    "target": "Aliens"
+    "target": "Aliens (film)"
   },
   {
     "source": "Christopher Nolan",
@@ -107,7 +107,7 @@
   {
     "source": "Christopher Nolan",
     "relationship": "DIRECTED",
-    "target": "Interstellar"
+    "target": "Interstellar (film)"
   },
   {
     "source": "Christopher Nolan",
@@ -122,7 +122,7 @@
   {
     "source": "Christopher Nolan",
     "relationship": "DIRECTED",
-    "target": "Oppenheimer"
+    "target": "Oppenheimer (film)"
   },
   {
     "source": "Sofia Coppola",
@@ -132,12 +132,12 @@
   {
     "source": "Sofia Coppola",
     "relationship": "DIRECTED",
-    "target": "Marie Antoinette"
+    "target": "Marie Antoinette (2006 film)"
   },
   {
     "source": "Sofia Coppola",
     "relationship": "DIRECTED",
-    "target": "The Virgin Suicides"
+    "target": "The Virgin Suicides (film)"
   },
   {
     "source": "Sofia Coppola",
@@ -147,12 +147,12 @@
   {
     "source": "Sofia Coppola",
     "relationship": "DIRECTED",
-    "target": "The Beguiled"
+    "target": "The Beguiled (2017 film)"
   },
   {
     "source": "Bong Joon-ho",
     "relationship": "DIRECTED",
-    "target": "Parasite"
+    "target": "Parasite (2019 film)"
   },
   {
     "source": "Bong Joon-ho",
@@ -177,12 +177,12 @@
   {
     "source": "Denis Villeneuve",
     "relationship": "DIRECTED",
-    "target": "Dune"
+    "target": "Dune (2021 film)"
   },
   {
     "source": "Denis Villeneuve",
     "relationship": "DIRECTED",
-    "target": "Arrival"
+    "target": "Arrival (film)"
   },
   {
     "source": "Denis Villeneuve",
@@ -197,7 +197,7 @@
   {
     "source": "Denis Villeneuve",
     "relationship": "DIRECTED",
-    "target": "Sicario"
+    "target": "Sicario (2015 film)"
   },
   {
     "source": "Christopher McQuarrie",
@@ -222,22 +222,22 @@
   {
     "source": "Christopher McQuarrie",
     "relationship": "DIRECTED",
-    "target": "Jack Reacher"
+    "target": "Jack Reacher (film)"
   },
   {
     "source": "Greta Gerwig",
     "relationship": "DIRECTED",
-    "target": "Barbie"
+    "target": "Barbie (film)"
   },
   {
     "source": "Greta Gerwig",
     "relationship": "DIRECTED",
-    "target": "Lady Bird"
+    "target": "Lady Bird (film)"
   },
   {
     "source": "Greta Gerwig",
     "relationship": "DIRECTED",
-    "target": "Little Women"
+    "target": "Little Women (2019 film)"
   },
   {
     "source": "Greta Gerwig",
@@ -250,14 +250,19 @@
     "target": "Nights and Weekends"
   },
   {
-    "source": "Rocky",
+    "source": "Rocky (franchise)",
     "relationship": "STARS",
     "target": "Sylvester Stallone"
   },
   {
-    "source": "Creed",
+    "source": "Creed (film)",
     "relationship": "STARS",
     "target": "Sylvester Stallone"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "STARS",
+    "target": "Mark Ruffalo"
   },
   {
     "source": "Jojo Rabbit",
@@ -265,39 +270,34 @@
     "target": "Adolf Hitler"
   },
   {
-    "source": "Thor: Ragnarok",
-    "relationship": "STARS",
-    "target": "Q41422"
-  },
-  {
     "source": "Thor: Love and Thunder",
     "relationship": "STARS",
     "target": "Matt Damon"
   },
   {
-    "source": "Sinners",
-    "relationship": "STARS",
-    "target": "Hailee Steinfeld"
-  },
-  {
-    "source": "Sinners",
-    "relationship": "STARS",
-    "target": "Nathaniel Arcand"
-  },
-  {
-    "source": "Sinners",
-    "relationship": "STARS",
-    "target": "Omar Benson Miller"
-  },
-  {
     "source": "Thor: Ragnarok",
     "relationship": "STARS",
-    "target": "Q54314"
+    "target": "Chris Hemsworth"
   },
   {
     "source": "Thor: Love and Thunder",
     "relationship": "STARS",
     "target": "Vin Diesel"
+  },
+  {
+    "source": "Sinners (2025 film)",
+    "relationship": "STARS",
+    "target": "Hailee Steinfeld"
+  },
+  {
+    "source": "Sinners (2025 film)",
+    "relationship": "STARS",
+    "target": "Nathaniel Arcand"
+  },
+  {
+    "source": "Sinners (2025 film)",
+    "relationship": "STARS",
+    "target": "Omar Benson Miller"
   },
   {
     "source": "Thor: Ragnarok",
@@ -312,15 +312,15 @@
   {
     "source": "Jojo Rabbit",
     "relationship": "STARS",
-    "target": "Q23814"
+    "target": "Stephen Merchant"
   },
   {
     "source": "Jojo Rabbit",
     "relationship": "STARS",
-    "target": "Q34436"
+    "target": "Scarlett Johansson"
   },
   {
-    "source": "Rocky",
+    "source": "Rocky (franchise)",
     "relationship": "STARS",
     "target": "Talia Shire"
   },
@@ -330,29 +330,39 @@
     "target": "Werner Herzog"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "STARS",
     "target": "Stan Lee"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "STARS",
     "target": "Forest Whitaker"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "STARS",
     "target": "Andy Serkis"
   },
   {
     "source": "The Mandalorian",
     "relationship": "STARS",
-    "target": "Rosario Dawson"
+    "target": "Nick Nolte"
   },
   {
     "source": "The Mandalorian",
     "relationship": "STARS",
-    "target": "Katee Sackhoff"
+    "target": "Mark Hamill"
+  },
+  {
+    "source": "Creed (film)",
+    "relationship": "STARS",
+    "target": "Phylicia Rashad"
+  },
+  {
+    "source": "Creed (film)",
+    "relationship": "STARS",
+    "target": "Tessa Thompson"
   },
   {
     "source": "Black Panther: Wakanda Forever",
@@ -360,22 +370,12 @@
     "target": "Angela Bassett"
   },
   {
-    "source": "Creed",
-    "relationship": "STARS",
-    "target": "Phylicia Rashad"
-  },
-  {
-    "source": "Creed",
-    "relationship": "STARS",
-    "target": "Tessa Thompson"
-  },
-  {
     "source": "Black Panther: Wakanda Forever",
     "relationship": "STARS",
     "target": "Lake Bell"
   },
   {
-    "source": "Rocky",
+    "source": "Rocky (franchise)",
     "relationship": "STARS",
     "target": "Carl Weathers"
   },
@@ -402,42 +402,37 @@
   {
     "source": "The Terminator",
     "relationship": "STARS",
-    "target": "Q2685"
+    "target": "Arnold Schwarzenegger"
   },
   {
     "source": "Terminator 2: Judgment Day",
     "relationship": "STARS",
-    "target": "Q2685"
+    "target": "Arnold Schwarzenegger"
   },
   {
-    "source": "Titanic",
+    "source": "Titanic (1997 film)",
     "relationship": "STARS",
     "target": "Frances Fisher"
   },
   {
     "source": "Spider-Man in film",
     "relationship": "STARS",
-    "target": "Q23891"
+    "target": "Andrew Garfield"
   },
   {
-    "source": "Titanic",
+    "source": "Titanic (1997 film)",
     "relationship": "STARS",
     "target": "Leonardo DiCaprio"
   },
   {
-    "source": "Wolfs",
+    "source": "Wolfs (film)",
     "relationship": "STARS",
     "target": "George Clooney"
   },
   {
-    "source": "Titanic",
-    "relationship": "STARS",
-    "target": "Q42574"
-  },
-  {
     "source": "Spider-Man: No Way Home",
     "relationship": "STARS",
-    "target": "Q23891"
+    "target": "Andrew Garfield"
   },
   {
     "source": "Spider-Man: Homecoming",
@@ -445,12 +440,12 @@
     "target": "Gwyneth Paltrow"
   },
   {
-    "source": "Avatar",
+    "source": "Titanic (1997 film)",
     "relationship": "STARS",
-    "target": "Q82085"
+    "target": "James Cameron"
   },
   {
-    "source": "Wolfs",
+    "source": "Wolfs (film)",
     "relationship": "STARS",
     "target": "Brad Pitt"
   },
@@ -460,9 +455,9 @@
     "target": "Kirsten Dunst"
   },
   {
-    "source": "The Terminator",
+    "source": "Avatar (2009 film)",
     "relationship": "STARS",
-    "target": "Brian Thompson"
+    "target": "Sam Worthington"
   },
   {
     "source": "Spider-Man in film",
@@ -473,16 +468,6 @@
     "source": "Spider-Man: Homecoming",
     "relationship": "STARS",
     "target": "Michael Keaton"
-  },
-  {
-    "source": "Avatar",
-    "relationship": "STARS",
-    "target": "Sigourney Weaver"
-  },
-  {
-    "source": "Aliens",
-    "relationship": "STARS",
-    "target": "Sigourney Weaver"
   },
   {
     "source": "Spider-Man: Far From Home",
@@ -495,6 +480,11 @@
     "target": "Toni Garrn"
   },
   {
+    "source": "The Terminator",
+    "relationship": "STARS",
+    "target": "Brian Thompson (actor)"
+  },
+  {
     "source": "Spider-Man: Far From Home",
     "relationship": "STARS",
     "target": "J. K. Simmons"
@@ -505,7 +495,22 @@
     "target": "J. K. Simmons"
   },
   {
-    "source": "Aliens",
+    "source": "Avatar (2009 film)",
+    "relationship": "STARS",
+    "target": "Sigourney Weaver"
+  },
+  {
+    "source": "Aliens (film)",
+    "relationship": "STARS",
+    "target": "Sigourney Weaver"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "STARS",
+    "target": "Robert Downey Jr."
+  },
+  {
+    "source": "Aliens (film)",
     "relationship": "STARS",
     "target": "Bill Paxton"
   },
@@ -515,22 +520,22 @@
     "target": "Bill Paxton"
   },
   {
-    "source": "Spider-Man: Homecoming",
+    "source": "Spider-Man: No Way Home",
     "relationship": "STARS",
-    "target": "Q165219"
+    "target": "Tobey Maguire"
   },
   {
-    "source": "Avatar",
+    "source": "Avatar (2009 film)",
     "relationship": "STARS",
     "target": "Michelle Rodriguez"
   },
   {
-    "source": "Spider-Man: No Way Home",
+    "source": "Wolfs (film)",
     "relationship": "STARS",
-    "target": "Q165524"
+    "target": "Amy Ryan"
   },
   {
-    "source": "Aliens",
+    "source": "Aliens (film)",
     "relationship": "STARS",
     "target": "Michael Biehn"
   },
@@ -538,11 +543,6 @@
     "source": "Terminator 2: Judgment Day",
     "relationship": "STARS",
     "target": "Linda Hamilton"
-  },
-  {
-    "source": "Wolfs",
-    "relationship": "STARS",
-    "target": "Amy Ryan"
   },
   {
     "source": "Terminator 2: Judgment Day",
@@ -560,74 +560,59 @@
     "target": "Marion Cotillard"
   },
   {
+    "source": "The Virgin Suicides (film)",
+    "relationship": "STARS",
+    "target": "Hanna R. Hall"
+  },
+  {
+    "source": "The Virgin Suicides (film)",
+    "relationship": "STARS",
+    "target": "A. J. Cook"
+  },
+  {
+    "source": "The Virgin Suicides (film)",
+    "relationship": "STARS",
+    "target": "Danny DeVito"
+  },
+  {
+    "source": "The Beguiled (2017 film)",
+    "relationship": "STARS",
+    "target": "Nicole Kidman"
+  },
+  {
     "source": "Lost in Translation",
     "relationship": "STARS",
     "target": "Bill Murray"
   },
   {
-    "source": "The Virgin Suicides",
-    "relationship": "STARS",
-    "target": "Hanna R. Hall"
-  },
-  {
-    "source": "The Virgin Suicides",
-    "relationship": "STARS",
-    "target": "A. J. Cook"
-  },
-  {
-    "source": "The Virgin Suicides",
-    "relationship": "STARS",
-    "target": "Danny DeVito"
-  },
-  {
-    "source": "Lost in Translation",
-    "relationship": "STARS",
-    "target": "Q34436"
-  },
-  {
-    "source": "The Beguiled",
-    "relationship": "STARS",
-    "target": "Nicole Kidman"
-  },
-  {
-    "source": "Oppenheimer",
+    "source": "Oppenheimer (film)",
     "relationship": "STARS",
     "target": "Kenneth Branagh"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "STARS",
-    "target": "Q36301"
+    "target": "Anne Hathaway"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "STARS",
+    "target": "Scarlett Johansson"
   },
   {
     "source": "The Bling Ring",
     "relationship": "STARS",
-    "target": "Q39476"
+    "target": "Emma Watson"
   },
   {
-    "source": "Inception",
-    "relationship": "STARS",
-    "target": "Leonardo DiCaprio"
-  },
-  {
-    "source": "Oppenheimer",
+    "source": "Oppenheimer (film)",
     "relationship": "STARS",
     "target": "Matthias Schweighöfer"
   },
   {
-    "source": "The Beguiled",
+    "source": "The Beguiled (2017 film)",
     "relationship": "STARS",
     "target": "Kirsten Dunst"
-  },
-  {
-    "source": "The Dark Knight",
-    "relationship": "STARS",
-    "target": "Heath Ledger"
-  },
-  {
-    "source": "Oppenheimer",
-    "relationship": "STARS",
-    "target": "Gary Oldman"
   },
   {
     "source": "The Bling Ring",
@@ -635,9 +620,29 @@
     "target": "Orlando Bloom"
   },
   {
+    "source": "Inception",
+    "relationship": "STARS",
+    "target": "Leonardo DiCaprio"
+  },
+  {
+    "source": "Oppenheimer (film)",
+    "relationship": "STARS",
+    "target": "Gary Oldman"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "STARS",
+    "target": "Heath Ledger"
+  },
+  {
     "source": "The Bling Ring",
     "relationship": "STARS",
     "target": "Lindsay Lohan"
+  },
+  {
+    "source": "The Beguiled (2017 film)",
+    "relationship": "STARS",
+    "target": "Colin Farrell"
   },
   {
     "source": "The Dark Knight",
@@ -650,12 +655,12 @@
     "target": "Christian Bale"
   },
   {
-    "source": "The Beguiled",
+    "source": "Interstellar (film)",
     "relationship": "STARS",
-    "target": "Colin Farrell"
+    "target": "Mackenzie Foy"
   },
   {
-    "source": "Marie Antoinette",
+    "source": "Marie Antoinette (2006 film)",
     "relationship": "STARS",
     "target": "Marianne Faithfull"
   },
@@ -670,9 +675,9 @@
     "target": "Morgan Freeman"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "STARS",
-    "target": "Mackenzie Foy"
+    "target": "Josh Stewart"
   },
   {
     "source": "Batman Begins",
@@ -680,19 +685,14 @@
     "target": "Liam Neeson"
   },
   {
-    "source": "Interstellar",
-    "relationship": "STARS",
-    "target": "Josh Stewart"
-  },
-  {
-    "source": "Marie Antoinette",
-    "relationship": "STARS",
-    "target": "Kirsten Dunst"
-  },
-  {
-    "source": "Marie Antoinette",
+    "source": "Marie Antoinette (2006 film)",
     "relationship": "STARS",
     "target": "Aurore Clément"
+  },
+  {
+    "source": "Marie Antoinette (2006 film)",
+    "relationship": "STARS",
+    "target": "Kirsten Dunst"
   },
   {
     "source": "Inception",
@@ -700,19 +700,29 @@
     "target": "Michael Caine"
   },
   {
-    "source": "Arrival",
+    "source": "Arrival (film)",
     "relationship": "STARS",
-    "target": "Q23365"
+    "target": "Jeremy Renner"
   },
   {
-    "source": "Sicario",
+    "source": "Sicario (2015 film)",
     "relationship": "STARS",
     "target": "Josh Brolin"
   },
   {
-    "source": "Dune",
+    "source": "Dune (2021 film)",
     "relationship": "STARS",
     "target": "Josh Brolin"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "STARS",
+    "target": "Dave Bautista"
+  },
+  {
+    "source": "Dune (2021 film)",
+    "relationship": "STARS",
+    "target": "Dave Bautista"
   },
   {
     "source": "Mickey 17",
@@ -722,12 +732,7 @@
   {
     "source": "Blade Runner 2049",
     "relationship": "STARS",
-    "target": "Dave Bautista"
-  },
-  {
-    "source": "Dune",
-    "relationship": "STARS",
-    "target": "Dave Bautista"
+    "target": "Harrison Ford"
   },
   {
     "source": "Dune: Part Two",
@@ -737,7 +742,7 @@
   {
     "source": "Mickey 17",
     "relationship": "STARS",
-    "target": "Q41422"
+    "target": "Mark Ruffalo"
   },
   {
     "source": "Dune: Part Two",
@@ -745,19 +750,9 @@
     "target": "Dave Bautista"
   },
   {
-    "source": "Blade Runner 2049",
-    "relationship": "STARS",
-    "target": "Harrison Ford"
-  },
-  {
     "source": "Snowpiercer",
     "relationship": "STARS",
     "target": "Ed Harris"
-  },
-  {
-    "source": "Dune: Part Two",
-    "relationship": "STARS",
-    "target": "Javier Bardem"
   },
   {
     "source": "Okja",
@@ -765,7 +760,12 @@
     "target": "Jake Gyllenhaal"
   },
   {
-    "source": "Dune",
+    "source": "Dune (2021 film)",
+    "relationship": "STARS",
+    "target": "Javier Bardem"
+  },
+  {
+    "source": "Dune: Part Two",
     "relationship": "STARS",
     "target": "Javier Bardem"
   },
@@ -775,29 +775,29 @@
     "target": "Hiam Abbass"
   },
   {
-    "source": "Mickey 17",
-    "relationship": "STARS",
-    "target": "Toni Collette"
-  },
-  {
     "source": "Snowpiercer",
     "relationship": "STARS",
-    "target": "Q178348"
+    "target": "Chris Evans (actor)"
   },
   {
-    "source": "Arrival",
+    "source": "Arrival (film)",
     "relationship": "STARS",
     "target": "Forest Whitaker"
   },
   {
-    "source": "Sicario",
+    "source": "Sicario (2015 film)",
     "relationship": "STARS",
     "target": "Emily Blunt"
   },
   {
-    "source": "Sicario",
+    "source": "Sicario (2015 film)",
     "relationship": "STARS",
     "target": "Benicio del Toro"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "STARS",
+    "target": "Toni Collette"
   },
   {
     "source": "Snowpiercer",
@@ -810,27 +810,27 @@
     "target": "Tilda Swinton"
   },
   {
-    "source": "Parasite",
-    "relationship": "STARS",
-    "target": "Song Kang-ho"
-  },
-  {
-    "source": "Parasite",
-    "relationship": "STARS",
-    "target": "Lee Sun-kyun"
-  },
-  {
-    "source": "Parasite",
-    "relationship": "STARS",
-    "target": "Choi Woo-shik"
-  },
-  {
     "source": "Okja",
     "relationship": "STARS",
     "target": "Lily Collins"
   },
   {
-    "source": "Arrival",
+    "source": "Parasite (2019 film)",
+    "relationship": "STARS",
+    "target": "Song Kang-ho"
+  },
+  {
+    "source": "Parasite (2019 film)",
+    "relationship": "STARS",
+    "target": "Lee Sun-kyun"
+  },
+  {
+    "source": "Parasite (2019 film)",
+    "relationship": "STARS",
+    "target": "Choi Woo-shik"
+  },
+  {
+    "source": "Arrival (film)",
     "relationship": "STARS",
     "target": "Michael Stuhlbarg"
   },
@@ -852,32 +852,32 @@
   {
     "source": "Mission: Impossible – Rogue Nation",
     "relationship": "STARS",
-    "target": "Q23365"
+    "target": "Jeremy Renner"
   },
   {
-    "source": "Little Women",
+    "source": "Little Women (2019 film)",
     "relationship": "STARS",
-    "target": "Q873"
+    "target": "Meryl Streep"
   },
   {
     "source": "Narnia: The Magician's Nephew",
     "relationship": "STARS",
-    "target": "Q873"
+    "target": "Meryl Streep"
   },
   {
-    "source": "Jack Reacher",
+    "source": "Jack Reacher (film)",
     "relationship": "STARS",
-    "target": "Q37079"
+    "target": "Tom Cruise"
   },
   {
     "source": "Mission: Impossible – Rogue Nation",
     "relationship": "STARS",
-    "target": "Q37079"
+    "target": "Tom Cruise"
   },
   {
     "source": "Mission: Impossible – Fallout",
     "relationship": "STARS",
-    "target": "Q37079"
+    "target": "Tom Cruise"
   },
   {
     "source": "Narnia: The Magician's Nephew",
@@ -885,47 +885,27 @@
     "target": "Daniel Craig"
   },
   {
-    "source": "Mission: Impossible – Dead Reckoning Part One",
-    "relationship": "STARS",
-    "target": "Q37079"
-  },
-  {
-    "source": "Mission: Impossible – The Final Reckoning",
-    "relationship": "STARS",
-    "target": "Q37079"
-  },
-  {
-    "source": "Little Women",
-    "relationship": "STARS",
-    "target": "Q39476"
-  },
-  {
-    "source": "Narnia: The Magician's Nephew",
-    "relationship": "STARS",
-    "target": "Carey Mulligan"
-  },
-  {
-    "source": "Little Women",
-    "relationship": "STARS",
-    "target": "Laura Dern"
-  },
-  {
-    "source": "Jack Reacher",
+    "source": "Jack Reacher (film)",
     "relationship": "STARS",
     "target": "Werner Herzog"
   },
   {
-    "source": "Barbie",
+    "source": "Barbie (film)",
     "relationship": "STARS",
     "target": "John Cena"
   },
   {
-    "source": "Mission: Impossible – The Final Reckoning",
+    "source": "Mission: Impossible – Dead Reckoning Part One",
     "relationship": "STARS",
-    "target": "Angela Bassett"
+    "target": "Tom Cruise"
   },
   {
-    "source": "Lady Bird",
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Tom Cruise"
+  },
+  {
+    "source": "Lady Bird (film)",
     "relationship": "STARS",
     "target": "Kathryn Newton"
   },
@@ -935,14 +915,9 @@
     "target": "Wolfgang Cerny"
   },
   {
-    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "source": "Little Women (2019 film)",
     "relationship": "STARS",
-    "target": "Q234959"
-  },
-  {
-    "source": "Mission: Impossible – The Final Reckoning",
-    "relationship": "STARS",
-    "target": "Q234959"
+    "target": "Emma Watson"
   },
   {
     "source": "Mission: Impossible – Fallout",
@@ -950,27 +925,52 @@
     "target": "Alec Baldwin"
   },
   {
+    "source": "Narnia: The Magician's Nephew",
+    "relationship": "STARS",
+    "target": "Carey Mulligan"
+  },
+  {
+    "source": "Little Women (2019 film)",
+    "relationship": "STARS",
+    "target": "Laura Dern"
+  },
+  {
+    "source": "Jack Reacher (film)",
+    "relationship": "STARS",
+    "target": "Robert Duvall"
+  },
+  {
+    "source": "Barbie (film)",
+    "relationship": "STARS",
+    "target": "Ryan Gosling"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Angela Bassett"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Janet McTeer"
+  },
+  {
+    "source": "Barbie (film)",
+    "relationship": "STARS",
+    "target": "Will Ferrell"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "STARS",
+    "target": "Hayley Atwell"
+  },
+  {
     "source": "Mission: Impossible – Dead Reckoning Part One",
     "relationship": "STARS",
     "target": "Simon Pegg"
   },
   {
-    "source": "Jack Reacher",
-    "relationship": "STARS",
-    "target": "Robert Duvall"
-  },
-  {
-    "source": "Barbie",
-    "relationship": "STARS",
-    "target": "Ryan Gosling"
-  },
-  {
-    "source": "Barbie",
-    "relationship": "STARS",
-    "target": "Will Ferrell"
-  },
-  {
-    "source": "Lady Bird",
+    "source": "Lady Bird (film)",
     "relationship": "STARS",
     "target": "Saoirse Ronan"
   },
@@ -980,7 +980,7 @@
     "target": "Michelle Monaghan"
   },
   {
-    "source": "Lady Bird",
+    "source": "Lady Bird (film)",
     "relationship": "STARS",
     "target": "Laurie Metcalf"
   },
@@ -1000,12 +1000,12 @@
     "target": "Kent Osborne"
   },
   {
-    "source": "Creed",
+    "source": "Creed (film)",
     "relationship": "PRODUCED_BY",
     "target": "Metro-Goldwyn-Mayer"
   },
   {
-    "source": "Rocky",
+    "source": "Rocky (franchise)",
     "relationship": "PRODUCED_BY",
     "target": "United Artists"
   },
@@ -1020,7 +1020,7 @@
     "target": "Marvel Studios"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "PRODUCED_BY",
     "target": "Marvel Studios"
   },
@@ -1035,17 +1035,17 @@
     "target": "Walt Disney Studios Motion Pictures"
   },
   {
-    "source": "Sinners",
+    "source": "Sinners (2025 film)",
     "relationship": "PRODUCED_BY",
     "target": "Proximity Media"
   },
   {
-    "source": "Titanic",
+    "source": "Titanic (1997 film)",
     "relationship": "PRODUCED_BY",
     "target": "Paramount Pictures"
   },
   {
-    "source": "Wolfs",
+    "source": "Wolfs (film)",
     "relationship": "PRODUCED_BY",
     "target": "Plan B Entertainment"
   },
@@ -1070,7 +1070,7 @@
     "target": "Columbia Pictures"
   },
   {
-    "source": "Titanic",
+    "source": "Titanic (1997 film)",
     "relationship": "PRODUCED_BY",
     "target": "British Film Institute"
   },
@@ -1095,17 +1095,17 @@
     "target": "Marvel Studios"
   },
   {
-    "source": "Avatar",
+    "source": "Avatar (2009 film)",
     "relationship": "PRODUCED_BY",
     "target": "20th Century Studios"
   },
   {
-    "source": "Aliens",
+    "source": "Aliens (film)",
     "relationship": "PRODUCED_BY",
     "target": "20th Century Studios"
   },
   {
-    "source": "Avatar",
+    "source": "Avatar (2009 film)",
     "relationship": "PRODUCED_BY",
     "target": "Ingenious Media"
   },
@@ -1125,19 +1125,19 @@
     "target": "Carolco Pictures"
   },
   {
-    "source": "Wolfs",
+    "source": "Wolfs (film)",
     "relationship": "PRODUCED_BY",
-    "target": "Q108570460"
+    "target": "Apple Studios"
   },
   {
-    "source": "Aliens",
+    "source": "Aliens (film)",
     "relationship": "PRODUCED_BY",
     "target": "Brandywine Productions"
   },
   {
     "source": "The Terminator",
     "relationship": "PRODUCED_BY",
-    "target": "Hemdale films"
+    "target": "Hemdale Film Corporation"
   },
   {
     "source": "Inception",
@@ -1155,17 +1155,32 @@
     "target": "Warner Bros. Entertainment"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "PRODUCED_BY",
     "target": "Warner Bros. Entertainment"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "PRODUCED_BY",
     "target": "Paramount Pictures"
   },
   {
-    "source": "Oppenheimer",
+    "source": "Inception",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Entertainment"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Entertainment"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Entertainment"
+  },
+  {
+    "source": "Oppenheimer (film)",
     "relationship": "PRODUCED_BY",
     "target": "Universal Pictures"
   },
@@ -1175,12 +1190,12 @@
     "target": "American Zoetrope"
   },
   {
-    "source": "Marie Antoinette",
+    "source": "Marie Antoinette (2006 film)",
     "relationship": "PRODUCED_BY",
     "target": "American Zoetrope"
   },
   {
-    "source": "The Virgin Suicides",
+    "source": "The Virgin Suicides (film)",
     "relationship": "PRODUCED_BY",
     "target": "American Zoetrope"
   },
@@ -1190,32 +1205,17 @@
     "target": "American Zoetrope"
   },
   {
-    "source": "The Beguiled",
+    "source": "The Beguiled (2017 film)",
     "relationship": "PRODUCED_BY",
     "target": "American Zoetrope"
   },
   {
-    "source": "Inception",
-    "relationship": "PRODUCED_BY",
-    "target": "Legendary Pictures"
-  },
-  {
-    "source": "The Dark Knight",
-    "relationship": "PRODUCED_BY",
-    "target": "Legendary Pictures"
-  },
-  {
-    "source": "Batman Begins",
-    "relationship": "PRODUCED_BY",
-    "target": "Legendary Pictures"
-  },
-  {
-    "source": "Oppenheimer",
+    "source": "Oppenheimer (film)",
     "relationship": "PRODUCED_BY",
     "target": "Syncopy Inc."
   },
   {
-    "source": "The Virgin Suicides",
+    "source": "The Virgin Suicides (film)",
     "relationship": "PRODUCED_BY",
     "target": "Paramount Vantage"
   },
@@ -1235,7 +1235,7 @@
     "target": "Plan B Entertainment"
   },
   {
-    "source": "Arrival",
+    "source": "Arrival (film)",
     "relationship": "PRODUCED_BY",
     "target": "Paramount Pictures"
   },
@@ -1250,24 +1250,24 @@
     "target": "Columbia Pictures"
   },
   {
-    "source": "Sicario",
+    "source": "Sicario (2015 film)",
     "relationship": "PRODUCED_BY",
     "target": "Starz Entertainment"
   },
   {
-    "source": "Dune",
+    "source": "Dune (2021 film)",
     "relationship": "PRODUCED_BY",
-    "target": "Legendary Pictures"
+    "target": "Legendary Entertainment"
   },
   {
     "source": "Dune: Part Two",
     "relationship": "PRODUCED_BY",
-    "target": "Legendary Pictures"
+    "target": "Legendary Entertainment"
   },
   {
     "source": "Mickey 17",
     "relationship": "PRODUCED_BY",
-    "target": "Offscreen"
+    "target": "Offscreen (disambiguation)"
   },
   {
     "source": "Memories of Murder",
@@ -1275,12 +1275,12 @@
     "target": "CJ ENM Films & Television"
   },
   {
-    "source": "Parasite",
+    "source": "Parasite (2019 film)",
     "relationship": "PRODUCED_BY",
     "target": "CJ ENM Films & Television"
   },
   {
-    "source": "Jack Reacher",
+    "source": "Jack Reacher (film)",
     "relationship": "PRODUCED_BY",
     "target": "Paramount Pictures"
   },
@@ -1300,32 +1300,32 @@
     "target": "Paramount Pictures"
   },
   {
-    "source": "Little Women",
+    "source": "Little Women (2019 film)",
     "relationship": "PRODUCED_BY",
     "target": "Columbia Pictures"
   },
   {
-    "source": "Little Women",
+    "source": "Little Women (2019 film)",
     "relationship": "PRODUCED_BY",
     "target": "Regency Enterprises"
   },
   {
     "source": "Mission: Impossible – Rogue Nation",
     "relationship": "PRODUCED_BY",
-    "target": "Bad Robot Productions"
+    "target": "Bad Robot"
   },
   {
     "source": "Mission: Impossible – Fallout",
     "relationship": "PRODUCED_BY",
-    "target": "Bad Robot Productions"
+    "target": "Bad Robot"
   },
   {
-    "source": "Barbie",
+    "source": "Barbie (film)",
     "relationship": "PRODUCED_BY",
     "target": "Heyday Films"
   },
   {
-    "source": "Jack Reacher",
+    "source": "Jack Reacher (film)",
     "relationship": "PRODUCED_BY",
     "target": "Cruise/Wagner Productions"
   },
@@ -1340,42 +1340,42 @@
     "target": "Skydance Media"
   },
   {
-    "source": "Lady Bird",
+    "source": "Lady Bird (film)",
     "relationship": "PRODUCED_BY",
     "target": "A24"
   },
   {
-    "source": "Barbie",
+    "source": "Barbie (film)",
     "relationship": "PRODUCED_BY",
     "target": "LuckyChap Entertainment"
   },
   {
-    "source": "Sinners",
+    "source": "Sinners (2025 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Actor"
   },
   {
-    "source": "Sinners",
+    "source": "Sinners (2025 film)",
     "relationship": "WON_AWARD",
-    "target": "Academy Award for Best Writing, Original Screenplay"
+    "target": "Academy Award for Best Original Screenplay"
   },
   {
     "source": "Jojo Rabbit",
     "relationship": "WON_AWARD",
-    "target": "Academy Award for Best Writing, Adapted Screenplay"
+    "target": "Academy Award for Best Adapted Screenplay"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "WON_AWARD",
     "target": "Saturn Award for Best Comic-to-Film Motion Picture"
   },
   {
-    "source": "Creed",
+    "source": "Creed (film)",
     "relationship": "WON_AWARD",
     "target": "National Board of Review: Top Ten Films"
   },
   {
-    "source": "Black Panther",
+    "source": "Black Panther (film)",
     "relationship": "WON_AWARD",
     "target": "National Board of Review: Top Ten Films"
   },
@@ -1385,27 +1385,27 @@
     "target": "National Board of Review: Top Ten Films"
   },
   {
-    "source": "Avatar",
+    "source": "Titanic (1997 film)",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Picture"
+  },
+  {
+    "source": "Titanic (1997 film)",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Director"
+  },
+  {
+    "source": "Avatar (2009 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Cinematography"
   },
   {
-    "source": "Titanic",
-    "relationship": "WON_AWARD",
-    "target": "Academy Award for Best Cinematography"
-  },
-  {
-    "source": "Titanic",
-    "relationship": "WON_AWARD",
-    "target": "Academy Award for Best Costume Design"
-  },
-  {
-    "source": "Avatar",
+    "source": "Avatar (2009 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Production Design"
   },
   {
-    "source": "Aliens",
+    "source": "Aliens (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Visual Effects"
   },
@@ -1420,7 +1420,7 @@
     "target": "Academy Award for Best Makeup and Hairstyling"
   },
   {
-    "source": "Aliens",
+    "source": "Aliens (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Sound Editing"
   },
@@ -1430,17 +1430,17 @@
     "target": "Saturn Award for Best Science Fiction Film"
   },
   {
-    "source": "Oppenheimer",
+    "source": "Oppenheimer (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Picture"
   },
   {
     "source": "Lost in Translation",
     "relationship": "WON_AWARD",
-    "target": "Academy Award for Best Writing, Original Screenplay"
+    "target": "Academy Award for Best Original Screenplay"
   },
   {
-    "source": "Oppenheimer",
+    "source": "Oppenheimer (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Director"
   },
@@ -1457,10 +1457,10 @@
   {
     "source": "Lost in Translation",
     "relationship": "WON_AWARD",
-    "target": "Golden Globe Award for Best Actor – Motion Picture Musical or Comedy"
+    "target": "Golden Globe Award for Best Actor in a Motion Picture – Musical or Comedy"
   },
   {
-    "source": "Marie Antoinette",
+    "source": "Marie Antoinette (2006 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Costume Design"
   },
@@ -1470,7 +1470,7 @@
     "target": "Academy Award for Best Visual Effects"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Visual Effects"
   },
@@ -1480,22 +1480,22 @@
     "target": "Academy Award for Best Sound Editing"
   },
   {
-    "source": "The Beguiled",
+    "source": "The Beguiled (2017 film)",
     "relationship": "WON_AWARD",
-    "target": "Cannes Best Director Award"
+    "target": "Cannes Film Festival Award for Best Director"
   },
   {
-    "source": "Interstellar",
+    "source": "Interstellar (film)",
     "relationship": "WON_AWARD",
     "target": "Saturn Award for Best Science Fiction Film"
   },
   {
-    "source": "Parasite",
+    "source": "Parasite (2019 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Director"
   },
   {
-    "source": "Parasite",
+    "source": "Parasite (2019 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Picture"
   },
@@ -1510,47 +1510,47 @@
     "target": "Academy Award for Best Visual Effects"
   },
   {
-    "source": "Arrival",
+    "source": "Arrival (film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Sound Editing"
   },
   {
-    "source": "Sicario",
+    "source": "Sicario (2015 film)",
     "relationship": "WON_AWARD",
     "target": "National Board of Review: Top Ten Films"
   },
   {
-    "source": "Arrival",
+    "source": "Arrival (film)",
     "relationship": "WON_AWARD",
     "target": "National Board of Review: Top Ten Films"
   },
   {
     "source": "Dune: Part Two",
     "relationship": "WON_AWARD",
-    "target": "Bradbury Award"
+    "target": "Ray Bradbury Award"
   },
   {
-    "source": "Dune",
+    "source": "Dune (2021 film)",
     "relationship": "WON_AWARD",
-    "target": "Hollywood Music in Media Award for Best Original Score in a Sci-Fi/Fantasy/Horror Film"
+    "target": "Hollywood Music in Media Award for Best Original Score in a Sci-Fi/Fantasy Film"
   },
   {
-    "source": "Dune",
+    "source": "Dune (2021 film)",
     "relationship": "WON_AWARD",
     "target": "Washington D.C. Area Film Critics Association Award for Best Art Direction"
   },
   {
-    "source": "Lady Bird",
+    "source": "Lady Bird (film)",
     "relationship": "WON_AWARD",
     "target": "National Board of Review: Top Ten Films"
   },
   {
-    "source": "Little Women",
+    "source": "Little Women (2019 film)",
     "relationship": "WON_AWARD",
     "target": "Academy Award for Best Costume Design"
   },
   {
-    "source": "Barbie",
+    "source": "Barbie (film)",
     "relationship": "WON_AWARD",
     "target": "Kids' Choice Award for Favorite Movie"
   }

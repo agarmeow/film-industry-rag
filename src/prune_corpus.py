@@ -6,6 +6,7 @@ deleting any article files that are no longer referenced.
 
 import json
 import os
+import re
 
 STUDIO_LIMIT_PER_FILM = 2
 AWARD_LIMIT_PER_FILM = 2
@@ -45,15 +46,12 @@ for t in kept:
 print(f"Entities referenced after capping: {len(needed_titles)}")
 
 # --- 3. Delete article .txt files that are no longer referenced ---
-# NOTE: article filenames were saved from Wikipedia article_title, which
-# can differ slightly from the Wikidata entity label (e.g. disambiguation
-# suffixes). This does a normalized match; anything it's unsure about it
-# leaves alone rather than risk deleting something you still need.
 raw_dir = "data/raw"
 existing_files = os.listdir(raw_dir)
 
 def normalize(name):
-    return name.replace(".txt", "").replace("_", " ").strip().lower()
+    name = name.replace(".txt", "")
+    return re.sub(r'[^a-z0-9]', '', name.lower())
 
 needed_normalized = {normalize(t) for t in needed_titles}
 

@@ -11,6 +11,8 @@ from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
 
+import re
+
 RAW_DIR = "data/raw"
 RELATIONSHIPS_PATH = "data/relationships.json"
 COLLECTION_NAME = "film_chunks"
@@ -20,6 +22,11 @@ EMBED_MODEL = "all-MiniLM-L6-v2"   # 384-dim, fast, good enough for baseline
 
 embedder = SentenceTransformer(EMBED_MODEL)
 client = QdrantClient(host="localhost", port=6333)
+
+
+def normalize(name):
+    name = name.replace(".txt", "")
+    return re.sub(r'[^a-z0-9]', '', name.lower())
 
 
 def chunk_text(text, size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
@@ -44,8 +51,8 @@ def load_relationships_by_entity(path):
 
     by_entity = {}
     for t in triples:
-        by_entity.setdefault(t["source"], []).append(t)
-        by_entity.setdefault(t["target"], []).append(t)
+        by_entity.setdefault(normalize(t["source"]), []).append(t)
+        by_entity.setdefault(normalize(t["target"]), []).append(t)
     return by_entity
 
 
@@ -83,7 +90,7 @@ def ingest():
         if not chunks:
             continue
 
-        related_triples = relationships_by_entity.get(doc_id, [])
+        related_triples = relationships_by_entity.get(normalize(fname), [])
         vectors = embedder.encode(chunks, show_progress_bar=False)
 
         for chunk_idx, (chunk, vec) in enumerate(zip(chunks, vectors)):
