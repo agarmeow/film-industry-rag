@@ -1,0 +1,1557 @@
+[
+  {
+    "source": "Ryan Coogler",
+    "relationship": "DIRECTED",
+    "target": "Black Panther"
+  },
+  {
+    "source": "Ryan Coogler",
+    "relationship": "DIRECTED",
+    "target": "Black Panther: Wakanda Forever"
+  },
+  {
+    "source": "Ryan Coogler",
+    "relationship": "DIRECTED",
+    "target": "Sinners"
+  },
+  {
+    "source": "Ryan Coogler",
+    "relationship": "DIRECTED",
+    "target": "Creed"
+  },
+  {
+    "source": "Ryan Coogler",
+    "relationship": "DIRECTED",
+    "target": "Rocky"
+  },
+  {
+    "source": "Taika Waititi",
+    "relationship": "DIRECTED",
+    "target": "Thor: Ragnarok"
+  },
+  {
+    "source": "Taika Waititi",
+    "relationship": "DIRECTED",
+    "target": "Thor: Love and Thunder"
+  },
+  {
+    "source": "Taika Waititi",
+    "relationship": "DIRECTED",
+    "target": "Jojo Rabbit"
+  },
+  {
+    "source": "Taika Waititi",
+    "relationship": "DIRECTED",
+    "target": "The Mandalorian"
+  },
+  {
+    "source": "Taika Waititi",
+    "relationship": "DIRECTED",
+    "target": "What We Do in the Shadows"
+  },
+  {
+    "source": "Jon Watts",
+    "relationship": "DIRECTED",
+    "target": "Spider-Man: Homecoming"
+  },
+  {
+    "source": "Jon Watts",
+    "relationship": "DIRECTED",
+    "target": "Spider-Man: Far From Home"
+  },
+  {
+    "source": "Jon Watts",
+    "relationship": "DIRECTED",
+    "target": "Spider-Man: No Way Home"
+  },
+  {
+    "source": "Jon Watts",
+    "relationship": "DIRECTED",
+    "target": "Spider-Man in film"
+  },
+  {
+    "source": "Jon Watts",
+    "relationship": "DIRECTED",
+    "target": "Wolfs"
+  },
+  {
+    "source": "James Cameron",
+    "relationship": "DIRECTED",
+    "target": "Titanic"
+  },
+  {
+    "source": "James Cameron",
+    "relationship": "DIRECTED",
+    "target": "Avatar"
+  },
+  {
+    "source": "James Cameron",
+    "relationship": "DIRECTED",
+    "target": "The Terminator"
+  },
+  {
+    "source": "James Cameron",
+    "relationship": "DIRECTED",
+    "target": "Terminator 2: Judgment Day"
+  },
+  {
+    "source": "James Cameron",
+    "relationship": "DIRECTED",
+    "target": "Aliens"
+  },
+  {
+    "source": "Christopher Nolan",
+    "relationship": "DIRECTED",
+    "target": "The Dark Knight"
+  },
+  {
+    "source": "Christopher Nolan",
+    "relationship": "DIRECTED",
+    "target": "Interstellar"
+  },
+  {
+    "source": "Christopher Nolan",
+    "relationship": "DIRECTED",
+    "target": "Inception"
+  },
+  {
+    "source": "Christopher Nolan",
+    "relationship": "DIRECTED",
+    "target": "Batman Begins"
+  },
+  {
+    "source": "Christopher Nolan",
+    "relationship": "DIRECTED",
+    "target": "Oppenheimer"
+  },
+  {
+    "source": "Sofia Coppola",
+    "relationship": "DIRECTED",
+    "target": "Lost in Translation"
+  },
+  {
+    "source": "Sofia Coppola",
+    "relationship": "DIRECTED",
+    "target": "Marie Antoinette"
+  },
+  {
+    "source": "Sofia Coppola",
+    "relationship": "DIRECTED",
+    "target": "The Virgin Suicides"
+  },
+  {
+    "source": "Sofia Coppola",
+    "relationship": "DIRECTED",
+    "target": "The Bling Ring"
+  },
+  {
+    "source": "Sofia Coppola",
+    "relationship": "DIRECTED",
+    "target": "The Beguiled"
+  },
+  {
+    "source": "Bong Joon-ho",
+    "relationship": "DIRECTED",
+    "target": "Parasite"
+  },
+  {
+    "source": "Bong Joon-ho",
+    "relationship": "DIRECTED",
+    "target": "Snowpiercer"
+  },
+  {
+    "source": "Bong Joon-ho",
+    "relationship": "DIRECTED",
+    "target": "Memories of Murder"
+  },
+  {
+    "source": "Bong Joon-ho",
+    "relationship": "DIRECTED",
+    "target": "Mickey 17"
+  },
+  {
+    "source": "Bong Joon-ho",
+    "relationship": "DIRECTED",
+    "target": "Okja"
+  },
+  {
+    "source": "Denis Villeneuve",
+    "relationship": "DIRECTED",
+    "target": "Dune"
+  },
+  {
+    "source": "Denis Villeneuve",
+    "relationship": "DIRECTED",
+    "target": "Arrival"
+  },
+  {
+    "source": "Denis Villeneuve",
+    "relationship": "DIRECTED",
+    "target": "Blade Runner 2049"
+  },
+  {
+    "source": "Denis Villeneuve",
+    "relationship": "DIRECTED",
+    "target": "Dune: Part Two"
+  },
+  {
+    "source": "Denis Villeneuve",
+    "relationship": "DIRECTED",
+    "target": "Sicario"
+  },
+  {
+    "source": "Christopher McQuarrie",
+    "relationship": "DIRECTED",
+    "target": "Mission: Impossible – Fallout"
+  },
+  {
+    "source": "Christopher McQuarrie",
+    "relationship": "DIRECTED",
+    "target": "Mission: Impossible – Rogue Nation"
+  },
+  {
+    "source": "Christopher McQuarrie",
+    "relationship": "DIRECTED",
+    "target": "Mission: Impossible – Dead Reckoning Part One"
+  },
+  {
+    "source": "Christopher McQuarrie",
+    "relationship": "DIRECTED",
+    "target": "Mission: Impossible – The Final Reckoning"
+  },
+  {
+    "source": "Christopher McQuarrie",
+    "relationship": "DIRECTED",
+    "target": "Jack Reacher"
+  },
+  {
+    "source": "Greta Gerwig",
+    "relationship": "DIRECTED",
+    "target": "Barbie"
+  },
+  {
+    "source": "Greta Gerwig",
+    "relationship": "DIRECTED",
+    "target": "Lady Bird"
+  },
+  {
+    "source": "Greta Gerwig",
+    "relationship": "DIRECTED",
+    "target": "Little Women"
+  },
+  {
+    "source": "Greta Gerwig",
+    "relationship": "DIRECTED",
+    "target": "Narnia: The Magician's Nephew"
+  },
+  {
+    "source": "Greta Gerwig",
+    "relationship": "DIRECTED",
+    "target": "Nights and Weekends"
+  },
+  {
+    "source": "Rocky",
+    "relationship": "STARS",
+    "target": "Sylvester Stallone"
+  },
+  {
+    "source": "Creed",
+    "relationship": "STARS",
+    "target": "Sylvester Stallone"
+  },
+  {
+    "source": "Jojo Rabbit",
+    "relationship": "STARS",
+    "target": "Adolf Hitler"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "STARS",
+    "target": "Q41422"
+  },
+  {
+    "source": "Thor: Love and Thunder",
+    "relationship": "STARS",
+    "target": "Matt Damon"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "STARS",
+    "target": "Hailee Steinfeld"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "STARS",
+    "target": "Nathaniel Arcand"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "STARS",
+    "target": "Omar Benson Miller"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "STARS",
+    "target": "Q54314"
+  },
+  {
+    "source": "Thor: Love and Thunder",
+    "relationship": "STARS",
+    "target": "Vin Diesel"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "STARS",
+    "target": "Anthony Hopkins"
+  },
+  {
+    "source": "Thor: Love and Thunder",
+    "relationship": "STARS",
+    "target": "Bradley Cooper"
+  },
+  {
+    "source": "Jojo Rabbit",
+    "relationship": "STARS",
+    "target": "Q23814"
+  },
+  {
+    "source": "Jojo Rabbit",
+    "relationship": "STARS",
+    "target": "Q34436"
+  },
+  {
+    "source": "Rocky",
+    "relationship": "STARS",
+    "target": "Talia Shire"
+  },
+  {
+    "source": "The Mandalorian",
+    "relationship": "STARS",
+    "target": "Werner Herzog"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "STARS",
+    "target": "Stan Lee"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "STARS",
+    "target": "Forest Whitaker"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "STARS",
+    "target": "Andy Serkis"
+  },
+  {
+    "source": "The Mandalorian",
+    "relationship": "STARS",
+    "target": "Rosario Dawson"
+  },
+  {
+    "source": "The Mandalorian",
+    "relationship": "STARS",
+    "target": "Katee Sackhoff"
+  },
+  {
+    "source": "Black Panther: Wakanda Forever",
+    "relationship": "STARS",
+    "target": "Angela Bassett"
+  },
+  {
+    "source": "Creed",
+    "relationship": "STARS",
+    "target": "Phylicia Rashad"
+  },
+  {
+    "source": "Creed",
+    "relationship": "STARS",
+    "target": "Tessa Thompson"
+  },
+  {
+    "source": "Black Panther: Wakanda Forever",
+    "relationship": "STARS",
+    "target": "Lake Bell"
+  },
+  {
+    "source": "Rocky",
+    "relationship": "STARS",
+    "target": "Carl Weathers"
+  },
+  {
+    "source": "Black Panther: Wakanda Forever",
+    "relationship": "STARS",
+    "target": "Martin Freeman"
+  },
+  {
+    "source": "What We Do in the Shadows",
+    "relationship": "STARS",
+    "target": "Jemaine Clement"
+  },
+  {
+    "source": "What We Do in the Shadows",
+    "relationship": "STARS",
+    "target": "Rhys Darby"
+  },
+  {
+    "source": "What We Do in the Shadows",
+    "relationship": "STARS",
+    "target": "Taika Waititi"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "STARS",
+    "target": "Q2685"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "STARS",
+    "target": "Q2685"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "STARS",
+    "target": "Frances Fisher"
+  },
+  {
+    "source": "Spider-Man in film",
+    "relationship": "STARS",
+    "target": "Q23891"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "STARS",
+    "target": "Leonardo DiCaprio"
+  },
+  {
+    "source": "Wolfs",
+    "relationship": "STARS",
+    "target": "George Clooney"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "STARS",
+    "target": "Q42574"
+  },
+  {
+    "source": "Spider-Man: No Way Home",
+    "relationship": "STARS",
+    "target": "Q23891"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "STARS",
+    "target": "Gwyneth Paltrow"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "STARS",
+    "target": "Q82085"
+  },
+  {
+    "source": "Wolfs",
+    "relationship": "STARS",
+    "target": "Brad Pitt"
+  },
+  {
+    "source": "Spider-Man in film",
+    "relationship": "STARS",
+    "target": "Kirsten Dunst"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "STARS",
+    "target": "Brian Thompson"
+  },
+  {
+    "source": "Spider-Man in film",
+    "relationship": "STARS",
+    "target": "Michael Keaton"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "STARS",
+    "target": "Michael Keaton"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "STARS",
+    "target": "Sigourney Weaver"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "STARS",
+    "target": "Sigourney Weaver"
+  },
+  {
+    "source": "Spider-Man: Far From Home",
+    "relationship": "STARS",
+    "target": "Jake Gyllenhaal"
+  },
+  {
+    "source": "Spider-Man: Far From Home",
+    "relationship": "STARS",
+    "target": "Toni Garrn"
+  },
+  {
+    "source": "Spider-Man: Far From Home",
+    "relationship": "STARS",
+    "target": "J. K. Simmons"
+  },
+  {
+    "source": "Spider-Man: No Way Home",
+    "relationship": "STARS",
+    "target": "J. K. Simmons"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "STARS",
+    "target": "Bill Paxton"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "STARS",
+    "target": "Bill Paxton"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "STARS",
+    "target": "Q165219"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "STARS",
+    "target": "Michelle Rodriguez"
+  },
+  {
+    "source": "Spider-Man: No Way Home",
+    "relationship": "STARS",
+    "target": "Q165524"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "STARS",
+    "target": "Michael Biehn"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "STARS",
+    "target": "Linda Hamilton"
+  },
+  {
+    "source": "Wolfs",
+    "relationship": "STARS",
+    "target": "Amy Ryan"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "STARS",
+    "target": "Nikki Cox"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "STARS",
+    "target": "Anna Faris"
+  },
+  {
+    "source": "Inception",
+    "relationship": "STARS",
+    "target": "Marion Cotillard"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "STARS",
+    "target": "Bill Murray"
+  },
+  {
+    "source": "The Virgin Suicides",
+    "relationship": "STARS",
+    "target": "Hanna R. Hall"
+  },
+  {
+    "source": "The Virgin Suicides",
+    "relationship": "STARS",
+    "target": "A. J. Cook"
+  },
+  {
+    "source": "The Virgin Suicides",
+    "relationship": "STARS",
+    "target": "Danny DeVito"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "STARS",
+    "target": "Q34436"
+  },
+  {
+    "source": "The Beguiled",
+    "relationship": "STARS",
+    "target": "Nicole Kidman"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "STARS",
+    "target": "Kenneth Branagh"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "STARS",
+    "target": "Q36301"
+  },
+  {
+    "source": "The Bling Ring",
+    "relationship": "STARS",
+    "target": "Q39476"
+  },
+  {
+    "source": "Inception",
+    "relationship": "STARS",
+    "target": "Leonardo DiCaprio"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "STARS",
+    "target": "Matthias Schweighöfer"
+  },
+  {
+    "source": "The Beguiled",
+    "relationship": "STARS",
+    "target": "Kirsten Dunst"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "STARS",
+    "target": "Heath Ledger"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "STARS",
+    "target": "Gary Oldman"
+  },
+  {
+    "source": "The Bling Ring",
+    "relationship": "STARS",
+    "target": "Orlando Bloom"
+  },
+  {
+    "source": "The Bling Ring",
+    "relationship": "STARS",
+    "target": "Lindsay Lohan"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "STARS",
+    "target": "Christian Bale"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "STARS",
+    "target": "Christian Bale"
+  },
+  {
+    "source": "The Beguiled",
+    "relationship": "STARS",
+    "target": "Colin Farrell"
+  },
+  {
+    "source": "Marie Antoinette",
+    "relationship": "STARS",
+    "target": "Marianne Faithfull"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "STARS",
+    "target": "Morgan Freeman"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "STARS",
+    "target": "Morgan Freeman"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "STARS",
+    "target": "Mackenzie Foy"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "STARS",
+    "target": "Liam Neeson"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "STARS",
+    "target": "Josh Stewart"
+  },
+  {
+    "source": "Marie Antoinette",
+    "relationship": "STARS",
+    "target": "Kirsten Dunst"
+  },
+  {
+    "source": "Marie Antoinette",
+    "relationship": "STARS",
+    "target": "Aurore Clément"
+  },
+  {
+    "source": "Inception",
+    "relationship": "STARS",
+    "target": "Michael Caine"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "STARS",
+    "target": "Q23365"
+  },
+  {
+    "source": "Sicario",
+    "relationship": "STARS",
+    "target": "Josh Brolin"
+  },
+  {
+    "source": "Dune",
+    "relationship": "STARS",
+    "target": "Josh Brolin"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "STARS",
+    "target": "Robert Pattinson"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "STARS",
+    "target": "Dave Bautista"
+  },
+  {
+    "source": "Dune",
+    "relationship": "STARS",
+    "target": "Dave Bautista"
+  },
+  {
+    "source": "Dune: Part Two",
+    "relationship": "STARS",
+    "target": "Josh Brolin"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "STARS",
+    "target": "Q41422"
+  },
+  {
+    "source": "Dune: Part Two",
+    "relationship": "STARS",
+    "target": "Dave Bautista"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "STARS",
+    "target": "Harrison Ford"
+  },
+  {
+    "source": "Snowpiercer",
+    "relationship": "STARS",
+    "target": "Ed Harris"
+  },
+  {
+    "source": "Dune: Part Two",
+    "relationship": "STARS",
+    "target": "Javier Bardem"
+  },
+  {
+    "source": "Okja",
+    "relationship": "STARS",
+    "target": "Jake Gyllenhaal"
+  },
+  {
+    "source": "Dune",
+    "relationship": "STARS",
+    "target": "Javier Bardem"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "STARS",
+    "target": "Hiam Abbass"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "STARS",
+    "target": "Toni Collette"
+  },
+  {
+    "source": "Snowpiercer",
+    "relationship": "STARS",
+    "target": "Q178348"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "STARS",
+    "target": "Forest Whitaker"
+  },
+  {
+    "source": "Sicario",
+    "relationship": "STARS",
+    "target": "Emily Blunt"
+  },
+  {
+    "source": "Sicario",
+    "relationship": "STARS",
+    "target": "Benicio del Toro"
+  },
+  {
+    "source": "Snowpiercer",
+    "relationship": "STARS",
+    "target": "John Hurt"
+  },
+  {
+    "source": "Okja",
+    "relationship": "STARS",
+    "target": "Tilda Swinton"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "STARS",
+    "target": "Song Kang-ho"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "STARS",
+    "target": "Lee Sun-kyun"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "STARS",
+    "target": "Choi Woo-shik"
+  },
+  {
+    "source": "Okja",
+    "relationship": "STARS",
+    "target": "Lily Collins"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "STARS",
+    "target": "Michael Stuhlbarg"
+  },
+  {
+    "source": "Memories of Murder",
+    "relationship": "STARS",
+    "target": "Byun Hee-bong"
+  },
+  {
+    "source": "Memories of Murder",
+    "relationship": "STARS",
+    "target": "Song Kang-ho"
+  },
+  {
+    "source": "Memories of Murder",
+    "relationship": "STARS",
+    "target": "Kim Sang-kyung"
+  },
+  {
+    "source": "Mission: Impossible – Rogue Nation",
+    "relationship": "STARS",
+    "target": "Q23365"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "STARS",
+    "target": "Q873"
+  },
+  {
+    "source": "Narnia: The Magician's Nephew",
+    "relationship": "STARS",
+    "target": "Q873"
+  },
+  {
+    "source": "Jack Reacher",
+    "relationship": "STARS",
+    "target": "Q37079"
+  },
+  {
+    "source": "Mission: Impossible – Rogue Nation",
+    "relationship": "STARS",
+    "target": "Q37079"
+  },
+  {
+    "source": "Mission: Impossible – Fallout",
+    "relationship": "STARS",
+    "target": "Q37079"
+  },
+  {
+    "source": "Narnia: The Magician's Nephew",
+    "relationship": "STARS",
+    "target": "Daniel Craig"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "STARS",
+    "target": "Q37079"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Q37079"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "STARS",
+    "target": "Q39476"
+  },
+  {
+    "source": "Narnia: The Magician's Nephew",
+    "relationship": "STARS",
+    "target": "Carey Mulligan"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "STARS",
+    "target": "Laura Dern"
+  },
+  {
+    "source": "Jack Reacher",
+    "relationship": "STARS",
+    "target": "Werner Herzog"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "STARS",
+    "target": "John Cena"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Angela Bassett"
+  },
+  {
+    "source": "Lady Bird",
+    "relationship": "STARS",
+    "target": "Kathryn Newton"
+  },
+  {
+    "source": "Mission: Impossible – Rogue Nation",
+    "relationship": "STARS",
+    "target": "Wolfgang Cerny"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "STARS",
+    "target": "Q234959"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "STARS",
+    "target": "Q234959"
+  },
+  {
+    "source": "Mission: Impossible – Fallout",
+    "relationship": "STARS",
+    "target": "Alec Baldwin"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "STARS",
+    "target": "Simon Pegg"
+  },
+  {
+    "source": "Jack Reacher",
+    "relationship": "STARS",
+    "target": "Robert Duvall"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "STARS",
+    "target": "Ryan Gosling"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "STARS",
+    "target": "Will Ferrell"
+  },
+  {
+    "source": "Lady Bird",
+    "relationship": "STARS",
+    "target": "Saoirse Ronan"
+  },
+  {
+    "source": "Mission: Impossible – Fallout",
+    "relationship": "STARS",
+    "target": "Michelle Monaghan"
+  },
+  {
+    "source": "Lady Bird",
+    "relationship": "STARS",
+    "target": "Laurie Metcalf"
+  },
+  {
+    "source": "Nights and Weekends",
+    "relationship": "STARS",
+    "target": "Greta Gerwig"
+  },
+  {
+    "source": "Nights and Weekends",
+    "relationship": "STARS",
+    "target": "Lynn Shelton"
+  },
+  {
+    "source": "Nights and Weekends",
+    "relationship": "STARS",
+    "target": "Kent Osborne"
+  },
+  {
+    "source": "Creed",
+    "relationship": "PRODUCED_BY",
+    "target": "Metro-Goldwyn-Mayer"
+  },
+  {
+    "source": "Rocky",
+    "relationship": "PRODUCED_BY",
+    "target": "United Artists"
+  },
+  {
+    "source": "The Mandalorian",
+    "relationship": "PRODUCED_BY",
+    "target": "Lucasfilm"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Black Panther: Wakanda Forever",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Thor: Ragnarok",
+    "relationship": "PRODUCED_BY",
+    "target": "Walt Disney Studios Motion Pictures"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "PRODUCED_BY",
+    "target": "Proximity Media"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Wolfs",
+    "relationship": "PRODUCED_BY",
+    "target": "Plan B Entertainment"
+  },
+  {
+    "source": "Spider-Man in film",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Spider-Man: Far From Home",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Spider-Man: No Way Home",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "PRODUCED_BY",
+    "target": "British Film Institute"
+  },
+  {
+    "source": "Spider-Man in film",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Spider-Man: Homecoming",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Spider-Man: Far From Home",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Spider-Man: No Way Home",
+    "relationship": "PRODUCED_BY",
+    "target": "Marvel Studios"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "PRODUCED_BY",
+    "target": "20th Century Studios"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "PRODUCED_BY",
+    "target": "20th Century Studios"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "PRODUCED_BY",
+    "target": "Ingenious Media"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "PRODUCED_BY",
+    "target": "Lightstorm Entertainment"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "PRODUCED_BY",
+    "target": "Orion Pictures"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "PRODUCED_BY",
+    "target": "Carolco Pictures"
+  },
+  {
+    "source": "Wolfs",
+    "relationship": "PRODUCED_BY",
+    "target": "Q108570460"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "PRODUCED_BY",
+    "target": "Brandywine Productions"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "PRODUCED_BY",
+    "target": "Hemdale films"
+  },
+  {
+    "source": "Inception",
+    "relationship": "PRODUCED_BY",
+    "target": "Warner Bros. Entertainment"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "PRODUCED_BY",
+    "target": "Warner Bros. Entertainment"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "PRODUCED_BY",
+    "target": "Warner Bros. Entertainment"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "PRODUCED_BY",
+    "target": "Warner Bros. Entertainment"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "PRODUCED_BY",
+    "target": "Universal Pictures"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "PRODUCED_BY",
+    "target": "American Zoetrope"
+  },
+  {
+    "source": "Marie Antoinette",
+    "relationship": "PRODUCED_BY",
+    "target": "American Zoetrope"
+  },
+  {
+    "source": "The Virgin Suicides",
+    "relationship": "PRODUCED_BY",
+    "target": "American Zoetrope"
+  },
+  {
+    "source": "The Bling Ring",
+    "relationship": "PRODUCED_BY",
+    "target": "American Zoetrope"
+  },
+  {
+    "source": "The Beguiled",
+    "relationship": "PRODUCED_BY",
+    "target": "American Zoetrope"
+  },
+  {
+    "source": "Inception",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Pictures"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Pictures"
+  },
+  {
+    "source": "Batman Begins",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Pictures"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "PRODUCED_BY",
+    "target": "Syncopy Inc."
+  },
+  {
+    "source": "The Virgin Suicides",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Vantage"
+  },
+  {
+    "source": "The Bling Ring",
+    "relationship": "PRODUCED_BY",
+    "target": "Pathé"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "PRODUCED_BY",
+    "target": "Tohokushinsha Film"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "PRODUCED_BY",
+    "target": "Plan B Entertainment"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "PRODUCED_BY",
+    "target": "Warner Bros. Entertainment"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Sicario",
+    "relationship": "PRODUCED_BY",
+    "target": "Starz Entertainment"
+  },
+  {
+    "source": "Dune",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Pictures"
+  },
+  {
+    "source": "Dune: Part Two",
+    "relationship": "PRODUCED_BY",
+    "target": "Legendary Pictures"
+  },
+  {
+    "source": "Mickey 17",
+    "relationship": "PRODUCED_BY",
+    "target": "Offscreen"
+  },
+  {
+    "source": "Memories of Murder",
+    "relationship": "PRODUCED_BY",
+    "target": "CJ ENM Films & Television"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "PRODUCED_BY",
+    "target": "CJ ENM Films & Television"
+  },
+  {
+    "source": "Jack Reacher",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Mission: Impossible – Fallout",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Mission: Impossible – The Final Reckoning",
+    "relationship": "PRODUCED_BY",
+    "target": "Paramount Pictures"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "PRODUCED_BY",
+    "target": "Columbia Pictures"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "PRODUCED_BY",
+    "target": "Regency Enterprises"
+  },
+  {
+    "source": "Mission: Impossible – Rogue Nation",
+    "relationship": "PRODUCED_BY",
+    "target": "Bad Robot Productions"
+  },
+  {
+    "source": "Mission: Impossible – Fallout",
+    "relationship": "PRODUCED_BY",
+    "target": "Bad Robot Productions"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "PRODUCED_BY",
+    "target": "Heyday Films"
+  },
+  {
+    "source": "Jack Reacher",
+    "relationship": "PRODUCED_BY",
+    "target": "Cruise/Wagner Productions"
+  },
+  {
+    "source": "Mission: Impossible – Rogue Nation",
+    "relationship": "PRODUCED_BY",
+    "target": "Skydance Media"
+  },
+  {
+    "source": "Mission: Impossible – Dead Reckoning Part One",
+    "relationship": "PRODUCED_BY",
+    "target": "Skydance Media"
+  },
+  {
+    "source": "Lady Bird",
+    "relationship": "PRODUCED_BY",
+    "target": "A24"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "PRODUCED_BY",
+    "target": "LuckyChap Entertainment"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Actor"
+  },
+  {
+    "source": "Sinners",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Writing, Original Screenplay"
+  },
+  {
+    "source": "Jojo Rabbit",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Writing, Adapted Screenplay"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "WON_AWARD",
+    "target": "Saturn Award for Best Comic-to-Film Motion Picture"
+  },
+  {
+    "source": "Creed",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Black Panther",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Jojo Rabbit",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Cinematography"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Cinematography"
+  },
+  {
+    "source": "Titanic",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Costume Design"
+  },
+  {
+    "source": "Avatar",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Production Design"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Visual Effects"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Visual Effects"
+  },
+  {
+    "source": "Terminator 2: Judgment Day",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Makeup and Hairstyling"
+  },
+  {
+    "source": "Aliens",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Sound Editing"
+  },
+  {
+    "source": "The Terminator",
+    "relationship": "WON_AWARD",
+    "target": "Saturn Award for Best Science Fiction Film"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Picture"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Writing, Original Screenplay"
+  },
+  {
+    "source": "Oppenheimer",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Director"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Supporting Actor"
+  },
+  {
+    "source": "Inception",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Cinematography"
+  },
+  {
+    "source": "Lost in Translation",
+    "relationship": "WON_AWARD",
+    "target": "Golden Globe Award for Best Actor – Motion Picture Musical or Comedy"
+  },
+  {
+    "source": "Marie Antoinette",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Costume Design"
+  },
+  {
+    "source": "Inception",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Visual Effects"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Visual Effects"
+  },
+  {
+    "source": "The Dark Knight",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Sound Editing"
+  },
+  {
+    "source": "The Beguiled",
+    "relationship": "WON_AWARD",
+    "target": "Cannes Best Director Award"
+  },
+  {
+    "source": "Interstellar",
+    "relationship": "WON_AWARD",
+    "target": "Saturn Award for Best Science Fiction Film"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Director"
+  },
+  {
+    "source": "Parasite",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Picture"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Cinematography"
+  },
+  {
+    "source": "Blade Runner 2049",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Visual Effects"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Sound Editing"
+  },
+  {
+    "source": "Sicario",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Arrival",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Dune: Part Two",
+    "relationship": "WON_AWARD",
+    "target": "Bradbury Award"
+  },
+  {
+    "source": "Dune",
+    "relationship": "WON_AWARD",
+    "target": "Hollywood Music in Media Award for Best Original Score in a Sci-Fi/Fantasy/Horror Film"
+  },
+  {
+    "source": "Dune",
+    "relationship": "WON_AWARD",
+    "target": "Washington D.C. Area Film Critics Association Award for Best Art Direction"
+  },
+  {
+    "source": "Lady Bird",
+    "relationship": "WON_AWARD",
+    "target": "National Board of Review: Top Ten Films"
+  },
+  {
+    "source": "Little Women",
+    "relationship": "WON_AWARD",
+    "target": "Academy Award for Best Costume Design"
+  },
+  {
+    "source": "Barbie",
+    "relationship": "WON_AWARD",
+    "target": "Kids' Choice Award for Favorite Movie"
+  }
+]
