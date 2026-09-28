@@ -3,300 +3,350 @@
     "id": 1,
     "question": "Who directed Oppenheimer?",
     "reference_answer": "Christopher Nolan",
-    "source_doc": "Oppenheimer (film)"
+    "source_doc": "Oppenheimer (film)",
+    "type": "director"
   },
   {
     "id": 2,
     "question": "Who directed Dune (2021 film)?",
     "reference_answer": "Denis Villeneuve",
-    "source_doc": "Dune (2021 film)"
+    "source_doc": "Dune (2021 film)",
+    "type": "director"
   },
   {
     "id": 3,
     "question": "Who directed Barbie?",
     "reference_answer": "Greta Gerwig",
-    "source_doc": "Barbie (film)"
+    "source_doc": "Barbie (film)",
+    "type": "director"
   },
   {
     "id": 4,
     "question": "Who directed Black Panther?",
     "reference_answer": "Ryan Coogler",
-    "source_doc": "Black Panther (film)"
+    "source_doc": "Black Panther (film)",
+    "type": "director"
   },
   {
     "id": 5,
     "question": "Who directed Titanic?",
     "reference_answer": "James Cameron",
-    "source_doc": "Titanic (1997 film)"
+    "source_doc": "Titanic (1997 film)",
+    "type": "director"
   },
   {
     "id": 6,
     "question": "Who directed Parasite?",
     "reference_answer": "Bong Joon-ho",
-    "source_doc": "Parasite (2019 film)"
+    "source_doc": "Parasite (2019 film)",
+    "type": "director"
   },
   {
     "id": 7,
     "question": "Who directed Lost in Translation?",
     "reference_answer": "Sofia Coppola",
-    "source_doc": "Lost in Translation"
+    "source_doc": "Lost in Translation",
+    "type": "director"
   },
   {
     "id": 8,
     "question": "Who directed Spider-Man: No Way Home?",
     "reference_answer": "Jon Watts",
-    "source_doc": "Spider-Man: No Way Home"
+    "source_doc": "Spider-Man: No Way Home",
+    "type": "director"
   },
   {
     "id": 9,
     "question": "Who directed Thor: Ragnarok?",
     "reference_answer": "Taika Waititi",
-    "source_doc": "Thor: Ragnarok"
+    "source_doc": "Thor: Ragnarok",
+    "type": "director"
   },
   {
     "id": 10,
     "question": "Who directed Mission: Impossible – Fallout?",
     "reference_answer": "Christopher McQuarrie",
-    "source_doc": "Mission: Impossible – Fallout"
+    "source_doc": "Mission: Impossible – Fallout",
+    "type": "director"
   },
   {
     "id": 11,
     "question": "Which film directed by Christopher Nolan stars Leonardo DiCaprio?",
     "reference_answer": "Inception",
-    "source_doc": "Inception"
+    "source_doc": "Inception",
+    "type": "director"
   },
   {
     "id": 12,
     "question": "Which actor starred as Bruce Wayne in Batman Begins?",
     "reference_answer": "Christian Bale",
-    "source_doc": "Batman Begins"
+    "source_doc": "Batman Begins",
+    "type": "cast"
   },
   {
     "id": 13,
     "question": "Which actor played the Joker in The Dark Knight?",
     "reference_answer": "Heath Ledger",
-    "source_doc": "The Dark Knight"
+    "source_doc": "The Dark Knight",
+    "type": "cast"
   },
   {
     "id": 14,
     "question": "Who starred in Interstellar as Joseph Cooper?",
     "reference_answer": "Matthew McConaughey",
-    "source_doc": "Interstellar (film)"
+    "source_doc": "Interstellar (film)",
+    "type": "cast"
   },
   {
     "id": 15,
     "question": "Who starred alongside Timothée Chalamet in Arrival?",
     "reference_answer": "Amy Adams",
-    "source_doc": "Arrival (film)"
+    "source_doc": "Arrival (film)",
+    "type": "cast"
   },
   {
     "id": 16,
     "question": "Who starred in Blade Runner 2049 alongside Ryan Gosling?",
     "reference_answer": "Harrison Ford",
-    "source_doc": "Blade Runner 2049"
+    "source_doc": "Blade Runner 2049",
+    "type": "cast"
   },
   {
     "id": 17,
     "question": "Who starred as Paul Atreides in Dune (2021 film)?",
     "reference_answer": "Timothée Chalamet",
-    "source_doc": "Dune (2021 film)"
+    "source_doc": "Dune (2021 film)",
+    "type": "cast"
   },
   {
     "id": 18,
     "question": "Who starred as Lady Bird McPherson in Lady Bird?",
     "reference_answer": "Saoirse Ronan",
-    "source_doc": "Lady Bird (film)"
+    "source_doc": "Lady Bird (film)",
+    "type": "cast"
   },
   {
     "id": 19,
     "question": "Who starred as Jo March in Greta Gerwig's Little Women?",
     "reference_answer": "Saoirse Ronan",
-    "source_doc": "Little Women (2019 film)"
+    "source_doc": "Little Women (2019 film)",
+    "type": "cast"
   },
   {
     "id": 20,
     "question": "Who played Barbie in the 2023 film Barbie?",
     "reference_answer": "Margot Robbie",
-    "source_doc": "Barbie (film)"
+    "source_doc": "Barbie (film)",
+    "type": "cast"
   },
   {
     "id": 21,
     "question": "Who played Ken in the film Barbie?",
     "reference_answer": "Ryan Gosling",
-    "source_doc": "Barbie (film)"
+    "source_doc": "Barbie (film)",
+    "type": "cast"
   },
   {
     "id": 22,
     "question": "Who starred as T'Challa in Black Panther?",
     "reference_answer": "Chadwick Boseman",
-    "source_doc": "Black Panther (film)"
+    "source_doc": "Black Panther (film)",
+    "type": "cast"
   },
   {
     "id": 23,
     "question": "Who starred as Adonis Creed in Creed?",
     "reference_answer": "Michael B. Jordan",
-    "source_doc": "Creed (film)"
+    "source_doc": "Creed (film)",
+    "type": "cast"
   },
   {
     "id": 24,
     "question": "Who played Jack Dawson in Titanic?",
     "reference_answer": "Leonardo DiCaprio",
-    "source_doc": "Titanic (1997 film)"
+    "source_doc": "Titanic (1997 film)",
+    "type": "cast"
   },
   {
     "id": 25,
     "question": "Who played Rose DeWitt Bukater in Titanic?",
     "reference_answer": "Kate Winslet",
-    "source_doc": "Titanic (1997 film)"
+    "source_doc": "Titanic (1997 film)",
+    "type": "cast"
   },
   {
     "id": 26,
     "question": "Who played Jake Sully in Avatar?",
     "reference_answer": "Sam Worthington",
-    "source_doc": "Avatar (2009 film)"
+    "source_doc": "Avatar (2009 film)",
+    "type": "cast"
   },
   {
     "id": 27,
     "question": "Who played the Terminator in The Terminator?",
     "reference_answer": "Arnold Schwarzenegger",
-    "source_doc": "The Terminator"
+    "source_doc": "The Terminator",
+    "type": "cast"
   },
   {
     "id": 28,
     "question": "Who played Kim Ki-taek in Parasite?",
     "reference_answer": "Song Kang-ho",
-    "source_doc": "Parasite (2019 film)"
+    "source_doc": "Parasite (2019 film)",
+    "type": "cast"
   },
   {
     "id": 29,
     "question": "Who starred as Curtis Everett in Snowpiercer?",
     "reference_answer": "Chris Evans",
-    "source_doc": "Snowpiercer"
+    "source_doc": "Snowpiercer",
+    "type": "cast"
   },
   {
     "id": 30,
     "question": "Who played Bob Harris in Lost in Translation?",
     "reference_answer": "Bill Murray",
-    "source_doc": "Lost in Translation"
+    "source_doc": "Lost in Translation",
+    "type": "cast"
   },
   {
     "id": 31,
     "question": "Who played Charlotte in Lost in Translation?",
     "reference_answer": "Scarlett Johansson",
-    "source_doc": "Lost in Translation"
+    "source_doc": "Lost in Translation",
+    "type": "cast"
   },
   {
     "id": 32,
     "question": "Who played Peter Parker in Spider-Man: Homecoming?",
     "reference_answer": "Tom Holland",
-    "source_doc": "Spider-Man: Homecoming"
+    "source_doc": "Spider-Man: Homecoming",
+    "type": "cast"
   },
   {
     "id": 33,
     "question": "Who starred as Jojo Betzler in Jojo Rabbit?",
     "reference_answer": "Roman Griffin Davis",
-    "source_doc": "Jojo Rabbit"
+    "source_doc": "Jojo Rabbit",
+    "type": "cast"
   },
   {
     "id": 34,
     "question": "Who played Ethan Hunt in Mission: Impossible – Rogue Nation?",
     "reference_answer": "Tom Cruise",
-    "source_doc": "Mission: Impossible – Rogue Nation"
+    "source_doc": "Mission: Impossible – Rogue Nation",
+    "type": "cast"
   },
   {
     "id": 35,
     "question": "Which production company produced Oppenheimer?",
     "reference_answer": "Syncopy Inc. and Universal Pictures",
-    "source_doc": "Oppenheimer (film)"
+    "source_doc": "Oppenheimer (film)",
+    "type": "studio"
   },
   {
     "id": 36,
     "question": "Which company produced Barbie (film)?",
     "reference_answer": "Warner Bros. Pictures",
-    "source_doc": "Barbie (film)"
+    "source_doc": "Barbie (film)",
+    "type": "studio"
   },
   {
     "id": 37,
     "question": "Which studio produced Black Panther?",
     "reference_answer": "Marvel Studios",
-    "source_doc": "Black Panther (film)"
+    "source_doc": "Black Panther (film)",
+    "type": "studio"
   },
   {
     "id": 38,
     "question": "Which production company produced Titanic?",
     "reference_answer": "Paramount Pictures and 20th Century Studios",
-    "source_doc": "Titanic (1997 film)"
+    "source_doc": "Titanic (1997 film)",
+    "type": "studio"
   },
   {
     "id": 39,
     "question": "Which studio produced Avatar?",
     "reference_answer": "20th Century Studios and Lightstorm Entertainment",
-    "source_doc": "Avatar (2009 film)"
+    "source_doc": "Avatar (2009 film)",
+    "type": "studio"
   },
   {
     "id": 40,
     "question": "Which major award did Parasite win at the Academy Awards?",
     "reference_answer": "Academy Award for Best Picture",
-    "source_doc": "Parasite (2019 film)"
+    "source_doc": "Parasite (2019 film)",
+    "type": "award"
   },
   {
     "id": 41,
     "question": "Which award did Oppenheimer win at the 96th Academy Awards?",
     "reference_answer": "Academy Award for Best Picture",
-    "source_doc": "Oppenheimer (film)"
+    "source_doc": "Oppenheimer (film)",
+    "type": "award"
   },
   {
     "id": 42,
     "question": "Which award did Christopher Nolan win for Oppenheimer?",
     "reference_answer": "Academy Award for Best Director",
-    "source_doc": "Oppenheimer (film)"
+    "source_doc": "Oppenheimer (film)",
+    "type": "award"
   },
   {
     "id": 43,
     "question": "Which award did Titanic win for Best Picture?",
     "reference_answer": "Academy Award for Best Picture",
-    "source_doc": "Titanic (1997 film)"
+    "source_doc": "Titanic (1997 film)",
+    "type": "award"
   },
   {
     "id": 44,
     "question": "Which film directed by Denis Villeneuve won Best Cinematography?",
     "reference_answer": "Blade Runner 2049",
-    "source_doc": "Blade Runner 2049"
+    "source_doc": "Blade Runner 2049",
+    "type": "director"
   },
   {
     "id": 45,
     "question": "Which film directed by Taika Waititi won the Academy Award for Best Adapted Screenplay?",
     "reference_answer": "Jojo Rabbit",
-    "source_doc": "Jojo Rabbit"
+    "source_doc": "Jojo Rabbit",
+    "type": "director"
   },
   {
     "id": 46,
     "question": "Who directed the 2017 film The Beguiled?",
     "reference_answer": "Sofia Coppola",
-    "source_doc": "The Beguiled (2017 film)"
+    "source_doc": "The Beguiled (2017 film)",
+    "type": "director"
   },
   {
     "id": 47,
     "question": "Who directed Marie Antoinette (2006 film)?",
     "reference_answer": "Sofia Coppola",
-    "source_doc": "Marie Antoinette (2006 film)"
+    "source_doc": "Marie Antoinette (2006 film)",
+    "type": "director"
   },
   {
     "id": 48,
     "question": "Who directed The Virgin Suicides?",
     "reference_answer": "Sofia Coppola",
-    "source_doc": "The Virgin Suicides (film)"
+    "source_doc": "The Virgin Suicides (film)",
+    "type": "director"
   },
   {
     "id": 49,
     "question": "Who directed Memories of Murder?",
     "reference_answer": "Bong Joon-ho",
-    "source_doc": "Memories of Murder"
+    "source_doc": "Memories of Murder",
+    "type": "director"
   },
   {
     "id": 50,
     "question": "Who directed Okja?",
     "reference_answer": "Bong Joon-ho",
-    "source_doc": "Okja"
+    "source_doc": "Okja",
+    "type": "director"
   }
 ]

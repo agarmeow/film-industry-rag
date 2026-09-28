@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-28T18:56:20.314799",
+  "model": "llm",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "top_k": 5,
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "total_questions": 50,
+  "retrieval_hit_rate_pct": 0.0,
+  "answer_accuracy_pct": 0.0,
+  "latency_avg_ms": 52.51,
+  "latency_p50_ms": 50.5,
+  "latency_p95_ms": 65.82,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_tokens": 0
+}

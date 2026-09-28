@@ -1,18 +1,17 @@
 """
-FastAPI RAG Service — Retrieval-Augmented Generation Endpoint.
-Retrieves top-k context chunks from Qdrant, builds a grounded prompt,
-generates an answer via Gemini API (or fallback extractor), and returns
-the answer with document citations.
+FastAPI RAG Generation Service (Step 0 Baseline)
+Performs vector retrieval via Qdrant and calls a real LLM (Gemini, Anthropic, or OpenAI)
+with temperature=0 to produce grounded, cited answers. Fails loudly if no API key is set.
 """
 
 import os
 import ssl
-import json
+import time
 from typing import List, Optional
-from fastapi import FastAPI, Query, HTTPException
-from pydantic import BaseModel
-from sentence_transformers import SentenceTransformer
-from qdrant_client import QdrantClient
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Suppress SSL verification warnings if local proxy/cert issues exist
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -21,20 +20,27 @@ os.environ["PYTHONHTTPSVERIFY"] = "0"
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
+from fastapi import FastAPI, Query, HTTPException
+from pydantic import BaseModel
+from sentence_transformers import SentenceTransformer
+from qdrant_client import QdrantClient
+
 app = FastAPI(
     title="Film Industry RAG Baseline Service",
-    description="Retrieval-Augmented Generation API for Film Industry Wikipedia Corpus",
+    description="Retrieval-Augmented Generation API with Real LLM Generation",
     version="1.0.0"
 )
 
-# Initialize Qdrant Client & Embedding Model
+# ---------------------------------------------------------------------
+# INITIALIZE HEAVY OBJECTS ONCE AT STARTUP
+# ---------------------------------------------------------------------
 EMBED_MODEL = "all-MiniLM-L6-v2"
 COLLECTION_NAME = "film_chunks"
 QDRANT_HOST = os.getenv("QDRANT_HOST", "localhost")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT", "6333"))
 
 embedder = SentenceTransformer(EMBED_MODEL)
-client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+qdrant_client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 
 
 class ChunkPayload(BaseModel):
@@ -50,87 +56,125 @@ class RAGResponse(BaseModel):
     answer: str
     sources: List[str]
     retrieved_chunks: List[ChunkPayload]
+    latency_ms: float
+    model: str
+    generator: str
+    input_tokens: int
+    output_tokens: int
 
 
-def generate_answer_from_context(query: str, chunks: List[dict]) -> str:
+def call_real_llm(query: str, retrieved_chunks: List[dict]) -> dict:
     """
-    Generates a grounded answer using Gemini API if GEMINI_API_KEY is set,
-    or falls back to an intelligent context-grounded synthesis engine.
+    Calls the configured real LLM provider (Gemini, Anthropic, or OpenAI) with temperature=0.
+    Fails loudly if no valid API key is found or if the LLM call fails.
     """
-    api_key = os.getenv("GEMINI_API_KEY")
-    context_text = "\n\n".join(
-        f"[Source: {c['doc_id']}]\n{c['text']}" for c in chunks
+    context_blocks = []
+    for i, c in enumerate(retrieved_chunks, 1):
+        context_blocks.append(f"[Doc {i}: {c['doc_id']}]\n{c['text']}")
+    context_str = "\n\n".join(context_blocks)
+
+    system_prompt = (
+        "You are an expert film industry assistant. Answer the user's question using ONLY the provided context snippets below.\n"
+        "For each factual claim, cite the source document title in brackets, e.g. [Oppenheimer (film)].\n"
+        "If the answer cannot be found in the context, say 'I don't know based on the provided context.' Do not use external knowledge."
     )
 
-    if api_key:
+    user_prompt = f"--- CONTEXT ---\n{context_str}\n\n--- QUESTION ---\n{query}\n\n--- ANSWER ---"
+
+    gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY")
+
+    if gemini_key:
         try:
             from google import genai
-            genai_client = genai.Client(api_key=api_key)
-            prompt = (
-                f"You are an expert film industry assistant. Answer the user's question accurately using ONLY the context provided below.\n"
-                f"If the answer cannot be found in the context, state that clearly. Include citations to source document titles.\n\n"
-                f"--- CONTEXT ---\n{context_text}\n\n"
-                f"--- QUESTION ---\n{query}"
+            from google.genai import types
+            g_client = genai.Client(api_key=gemini_key)
+            model_name = "gemini-2.5-flash"
+            response = g_client.models.generate_content(
+                model=model_name,
+                contents=f"{system_prompt}\n\n{user_prompt}",
+                config=types.GenerateContentConfig(
+                    temperature=0.0,
+                )
             )
-            response = genai_client.models.generate_content(
-                model="gemini-2.5-flash",  # or gemini-flash-latest
-                contents=prompt
-            )
-            if response and response.text:
-                return response.text.strip()
+            answer_text = response.text.strip() if response.text else "I don't know based on the provided context."
+            usage = getattr(response, "usage_metadata", None)
+            input_tokens = getattr(usage, "prompt_token_count", 0) if usage else 0
+            output_tokens = getattr(usage, "candidates_token_count", 0) if usage else 0
+            return {
+                "answer": answer_text,
+                "model": model_name,
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+            }
         except Exception as e:
-            print(f"Gemini API call failed, using fallback synthesis: {e}")
+            raise HTTPException(status_code=500, detail=f"LLM Generation Error (Gemini): {str(e)}")
 
-    # Fallback context-grounded synthesis
-    # Look for direct factual matches in chunks & relationship metadata
-    query_lower = query.lower()
-    relevant_sentences = []
-    
-    for c in chunks:
-        doc = c['doc_id']
-        text = c['text']
-        rels = c.get('relationships', [])
+    elif anthropic_key:
+        try:
+            import anthropic
+            a_client = anthropic.Anthropic(api_key=anthropic_key)
+            model_name = "claude-3-5-sonnet-20241022"
+            response = a_client.messages.create(
+                model=model_name,
+                max_tokens=300,
+                temperature=0.0,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_prompt}]
+            )
+            answer_text = response.content[0].text.strip()
+            return {
+                "answer": answer_text,
+                "model": model_name,
+                "input_tokens": response.usage.input_tokens,
+                "output_tokens": response.usage.output_tokens,
+            }
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"LLM Generation Error (Anthropic): {str(e)}")
 
-        # Check relationships metadata for direct graph matches
-        for rel in rels:
-            src = rel.get('source', '')
-            target = rel.get('target', '')
-            r_type = rel.get('relationship', '')
-            if r_type == 'DIRECTED' and ('who directed' in query_lower or 'director' in query_lower):
-                if src.lower() in query_lower or target.lower() in query_lower:
-                    return f"{src} directed {target}."
-            elif r_type == 'STARS' and ('who starred' in query_lower or 'star' in query_lower or 'actor' in query_lower or 'cast' in query_lower):
-                if src.lower() in query_lower:
-                    stars = [r['target'] for r in rels if r.get('relationship') == 'STARS']
-                    if stars:
-                        return f"{src} stars {', '.join(set(stars))}."
-            elif r_type == 'WON_AWARD' and ('award' in query_lower or 'win' in query_lower or 'won' in query_lower):
-                if src.lower() in query_lower or target.lower() in query_lower:
-                    awards = [r['target'] for r in rels if r.get('relationship') == 'WON_AWARD']
-                    if awards:
-                        return f"{src} won the following award(s): {', '.join(set(awards))}."
+    elif openai_key:
+        try:
+            import openai
+            o_client = openai.OpenAI(api_key=openai_key)
+            model_name = "gpt-4o-mini"
+            response = o_client.chat.completions.create(
+                model=model_name,
+                temperature=0.0,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ]
+            )
+            answer_text = response.choices[0].message.content.strip()
+            return {
+                "answer": answer_text,
+                "model": model_name,
+                "input_tokens": response.usage.prompt_tokens,
+                "output_tokens": response.usage.completion_tokens,
+            }
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"LLM Generation Error (OpenAI): {str(e)}")
 
-        # Extract matching sentence from text
-        sentences = text.split('. ')
-        for s in sentences:
-            if any(term in s.lower() for term in query_lower.replace('?', '').split() if len(term) > 3):
-                relevant_sentences.append((s.strip(), doc))
-
-    if relevant_sentences:
-        top_sentence, top_doc = relevant_sentences[0]
-        if not top_sentence.endswith('.'):
-            top_sentence += '.'
-        return f"{top_sentence} (Source: {top_doc})"
-
-    top_doc = chunks[0]['doc_id'] if chunks else "Unknown"
-    return f"Based on {top_doc}, {chunks[0]['text'][:200]}..."
+    else:
+        # FAIL LOUDLY — No silent fallbacks permitted
+        raise HTTPException(
+            status_code=500,
+            detail="LLM Generation Error: No API key found. Please set GEMINI_API_KEY, ANTHROPIC_API_KEY, or OPENAI_API_KEY in your .env file."
+        )
 
 
 @app.get("/health")
 def health_check():
     try:
-        exists = client.collection_exists(COLLECTION_NAME)
-        return {"status": "ok", "collection_exists": exists, "collection_name": COLLECTION_NAME}
+        exists = qdrant_client.collection_exists(COLLECTION_NAME)
+        has_key = bool(os.getenv("GEMINI_API_KEY") or os.getenv("ANTHROPIC_API_KEY") or os.getenv("OPENAI_API_KEY"))
+        return {
+            "status": "ok",
+            "collection_exists": exists,
+            "collection_name": COLLECTION_NAME,
+            "llm_key_configured": has_key
+        }
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
@@ -141,9 +185,12 @@ def ask_question(query: str = Query(..., description="The factual question to as
     if not query.strip():
         raise HTTPException(status_code=400, detail="Query cannot be empty")
 
+    start_time = time.time()
+
+    # Step 1: Embed Query & Retrieve Chunks
     try:
         q_vec = embedder.encode(query).tolist()
-        search_result = client.query_points(
+        search_result = qdrant_client.query_points(
             collection_name=COLLECTION_NAME,
             query=q_vec,
             limit=top_k,
@@ -165,13 +212,25 @@ def ask_question(query: str = Query(..., description="The factual question to as
             "relationships": p.payload.get("relationships", []),
         })
 
-    answer = generate_answer_from_context(query, retrieved_chunks)
+    # Step 2: Real LLM Generation Call
+    llm_res = call_real_llm(query, retrieved_chunks)
+
+    elapsed_ms = round((time.time() - start_time) * 1000, 2)
+
+    # Log token usage
+    print(f"[RAG API Log] Query: '{query[:40]}...' | Model: {llm_res['model']} | "
+          f"In Tokens: {llm_res['input_tokens']} | Out Tokens: {llm_res['output_tokens']} | Latency: {elapsed_ms}ms")
 
     return RAGResponse(
         query=query,
-        answer=answer,
+        answer=llm_res["answer"],
         sources=sorted(list(sources_set)),
-        retrieved_chunks=retrieved_chunks
+        retrieved_chunks=retrieved_chunks,
+        latency_ms=elapsed_ms,
+        model=llm_res["model"],
+        generator="llm",
+        input_tokens=llm_res["input_tokens"],
+        output_tokens=llm_res["output_tokens"]
     )
 
 
