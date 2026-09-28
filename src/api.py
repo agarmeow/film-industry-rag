@@ -5,7 +5,6 @@ with temperature=0 to produce grounded, cited answers. Fails loudly if no API ke
 """
 
 import os
-import ssl
 import time
 from typing import List, Optional
 from dotenv import load_dotenv
@@ -13,10 +12,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Suppress SSL verification warnings if local proxy/cert issues exist
-ssl._create_default_https_context = ssl._create_unverified_context
-os.environ["CURL_CA_BUNDLE"] = ""
-os.environ["PYTHONHTTPSVERIFY"] = "0"
+# Embedding model offline mode flags (model weights are cached locally)
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
@@ -65,8 +61,8 @@ class RAGResponse(BaseModel):
 
 def call_real_llm(query: str, retrieved_chunks: List[dict]) -> dict:
     """
-    Calls the configured real LLM provider (Gemini, Anthropic, or OpenAI) with temperature=0.
-    Fails loudly if no valid API key is found or if the LLM call fails.
+    Calls Gemini API (gemini-2.5-flash) with temperature=0.0.
+    Fails loudly with HTTP 500 if GEMINI_API_KEY is missing or call fails.
     """
     context_blocks = []
     for i, c in enumerate(retrieved_chunks, 1):
@@ -82,86 +78,40 @@ def call_real_llm(query: str, retrieved_chunks: List[dict]) -> dict:
     user_prompt = f"--- CONTEXT ---\n{context_str}\n\n--- QUESTION ---\n{query}\n\n--- ANSWER ---"
 
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
-    openai_key = os.getenv("OPENAI_API_KEY")
 
-    if gemini_key:
-        try:
-            from google import genai
-            from google.genai import types
-            g_client = genai.Client(api_key=gemini_key)
-            model_name = "gemini-2.5-flash"
-            response = g_client.models.generate_content(
-                model=model_name,
-                contents=f"{system_prompt}\n\n{user_prompt}",
-                config=types.GenerateContentConfig(
-                    temperature=0.0,
-                )
-            )
-            answer_text = response.text.strip() if response.text else "I don't know based on the provided context."
-            usage = getattr(response, "usage_metadata", None)
-            input_tokens = getattr(usage, "prompt_token_count", 0) if usage else 0
-            output_tokens = getattr(usage, "candidates_token_count", 0) if usage else 0
-            return {
-                "answer": answer_text,
-                "model": model_name,
-                "input_tokens": input_tokens,
-                "output_tokens": output_tokens,
-            }
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"LLM Generation Error (Gemini): {str(e)}")
-
-    elif anthropic_key:
-        try:
-            import anthropic
-            a_client = anthropic.Anthropic(api_key=anthropic_key)
-            model_name = "claude-3-5-sonnet-20241022"
-            response = a_client.messages.create(
-                model=model_name,
-                max_tokens=300,
-                temperature=0.0,
-                system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}]
-            )
-            answer_text = response.content[0].text.strip()
-            return {
-                "answer": answer_text,
-                "model": model_name,
-                "input_tokens": response.usage.input_tokens,
-                "output_tokens": response.usage.output_tokens,
-            }
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"LLM Generation Error (Anthropic): {str(e)}")
-
-    elif openai_key:
-        try:
-            import openai
-            o_client = openai.OpenAI(api_key=openai_key)
-            model_name = "gpt-4o-mini"
-            response = o_client.chat.completions.create(
-                model=model_name,
-                temperature=0.0,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ]
-            )
-            answer_text = response.choices[0].message.content.strip()
-            return {
-                "answer": answer_text,
-                "model": model_name,
-                "input_tokens": response.usage.prompt_tokens,
-                "output_tokens": response.usage.completion_tokens,
-            }
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"LLM Generation Error (OpenAI): {str(e)}")
-
-    else:
-        # FAIL LOUDLY — No silent fallbacks permitted
+    if not gemini_key:
         raise HTTPException(
             status_code=500,
-            detail="LLM Generation Error: No API key found. Please set GEMINI_API_KEY, ANTHROPIC_API_KEY, or OPENAI_API_KEY in your .env file."
+            detail="LLM Generation Error: No API key found. Please set GEMINI_API_KEY in your .env file."
         )
+
+    try:
+        from google import genai
+        from google.genai import types
+        g_client = genai.Client(api_key=gemini_key)
+        model_name = "gemini-2.5-flash"
+        response = g_client.models.generate_content(
+            model=model_name,
+            contents=f"{system_prompt}\n\n{user_prompt}",
+            config=types.GenerateContentConfig(
+                temperature=0.0,
+            )
+        )
+        answer_text = response.text.strip() if response.text else "I don't know based on the provided context."
+        usage = getattr(response, "usage_metadata", None)
+        input_tokens = getattr(usage, "prompt_token_count", 0) if (usage and getattr(usage, "prompt_token_count", None)) else 0
+        output_tokens = getattr(usage, "candidates_token_count", 0) if (usage and getattr(usage, "candidates_token_count", None)) else 0
+        
+        return {
+            "answer": answer_text,
+            "model": model_name,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"LLM Generation Error (Gemini): {str(e)}")
 
 
 @app.get("/health")

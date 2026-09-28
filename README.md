@@ -32,15 +32,10 @@ pip install -r requirements.txt
 ```
 
 ### 2. Configure LLM API Key
-Create a `.env` file in the project root containing your preferred LLM provider API key (the file is listed in `.gitignore` and will never be committed):
+Create a `.env` file in the project root containing your `GEMINI_API_KEY` (the file is listed in `.gitignore` and will never be committed):
 
 ```env
-# Choose your preferred provider:
 GEMINI_API_KEY=your_gemini_api_key_here
-# OR
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
-# OR
-OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 3. Run Qdrant Container
@@ -101,19 +96,22 @@ To run the automated 50-item evaluation benchmark:
 python src/eval.py
 ```
 
-This runs all questions in `data/eval_set.json` through the `/ask` pipeline, evaluates Retrieval Hit Rate @ 5, LLM Answer Correctness, Latency (P50/P95), and token usage, and exports detailed results to `eval_results.csv` and `eval_metadata.json`.
+> [!NOTE]
+> `src/eval.py` has a strict **Fail-Loud Guard**: It will immediately abort with a clear error if `GEMINI_API_KEY` is missing or if any LLM generation call fails/returns 0 tokens.
+
+When run with a valid `GEMINI_API_KEY`, it evaluates Retrieval Hit Rate @ 5, LLM Answer Correctness, Latency (Avg, P50, P95), and token counts across all 50 questions, and writes results to `eval_results.csv` and `eval_metadata.json`.
 
 ---
 
-## Baseline Benchmark Results
+## Baseline Benchmark Results Template
 
-| Parameter / Metric | Baseline Value | Notes |
+| Parameter / Metric | Target Baseline Value | Description / Notes |
 | :--- | :--- | :--- |
-| **Model Name** | `gemini-2.5-flash` / `claude-3-5-sonnet` | Temperature = 0.0 |
-| **Evaluation Date** | 2026-09-28 | Reproducible benchmark run |
-| **Total Evaluation Questions** | **50** | Factual Q&A across 5 categories |
-| **Retrieval Hit Rate @ 5** | **92.00%** (46/50) | Qdrant vector retrieval accuracy |
-| **Answer Accuracy** | **TBD / LLM Dependent** | Real LLM generation accuracy |
-| **Average Response Latency** | **1.2 – 3.5 s** | Real LLM API roundtrip latency |
+| **Model Name** | `gemini-2.5-flash` | Fixed Gemini model (`temperature=0.0`) |
+| **Total Questions** | **50** | Factual Q&A across 5 categories in `data/eval_set.json` |
+| **Retrieval Hit Rate @ 5** | **~90–95%** | Qdrant vector retrieval accuracy |
+| **Answer Accuracy** | **Measured on real LLM run** | Evaluates real LLM generation accuracy |
+| **Average Latency** | **1,000 – 4,000 ms** | Real LLM API roundtrip latency |
+| **Input / Output Tokens** | **Non-zero logged count** | Summed token usage across all 50 questions |
 | **Embedding Model** | `all-MiniLM-L6-v2` | 384-dimensional |
 | **Chunk Size / Overlap** | 500 words / 50 words | Fixed chunking strategy |

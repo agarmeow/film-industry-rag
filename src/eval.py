@@ -6,7 +6,6 @@ and Token Usage, and saves results to eval_results.csv and eval_metadata.json.
 """
 
 import os
-import ssl
 import json
 import csv
 import time
@@ -19,9 +18,7 @@ sys.path.insert(0, ".")
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
-ssl._create_default_https_context = ssl._create_unverified_context
-os.environ["CURL_CA_BUNDLE"] = ""
-os.environ["PYTHONHTTPSVERIFY"] = "0"
+# Embedding model offline mode flags (model weights are cached locally)
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
@@ -84,7 +81,7 @@ def run_eval():
     latencies = []
     category_stats = {}
 
-    model_used = "llm"
+    model_used = "unknown"
 
     for i, item in enumerate(eval_items, 1):
         q_id = item["id"]
@@ -94,21 +91,28 @@ def run_eval():
         q_type = item.get("type", "general")
 
         start_time = time.time()
-        response = None
         try:
             response = ask_question(query=q_text, top_k=5)
-            elapsed_ms = response.latency_ms
-            gen_ans = response.answer
-            ret_sources = response.sources
-            in_tokens = response.input_tokens
-            out_tokens = response.output_tokens
-            model_used = response.model
         except Exception as e:
-            elapsed_ms = round((time.time() - start_time) * 1000, 2)
-            gen_ans = f"ERROR: {str(e)}"
-            ret_sources = []
-            in_tokens = 0
-            out_tokens = 0
+            raise SystemExit(
+                f"\n❌ BENCHMARK ABORTED: API call failed on Question {q_id} ('{q_text}'): {str(e)}\n"
+                f"Please ensure GEMINI_API_KEY is configured in your .env file."
+            )
+
+        # Guard: Abort immediately if LLM returned 0 tokens or failed call
+        if getattr(response, 'input_tokens', 0) == 0:
+            raise SystemExit(
+                f"\n❌ BENCHMARK ABORTED: LLM API returned 0 tokens on Question {q_id} ('{q_text}').\n"
+                f"Response output: {response.answer[:200] if response else 'None'}\n"
+                f"Please verify your LLM provider API key."
+            )
+
+        elapsed_ms = response.latency_ms
+        gen_ans = response.answer
+        ret_sources = response.sources
+        in_tokens = response.input_tokens
+        out_tokens = response.output_tokens
+        model_used = response.model
 
         hit = check_retrieval_hit(src_doc, ret_sources)
         correct, reason = llm_judge_correctness(q_text, ref_ans, gen_ans)
